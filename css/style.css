@@ -1,0 +1,65 @@
+        /* menu list */
+        
+        .navbar-brand>img {
+            width: 78px;
+            height: 30px;
+        }
+        
+        .dropdown-menu {
+            border: 1px solid #f00;
+        }
+        
+        .dropdown-item {
+            color: #f00;
+            border: #f00;
+        }
+        
+        .dropdown-item:hover {
+            color: #fff;
+            background-color: #f00;
+        }
+        
+        .mymr-0 {
+            margin-left: auto;
+            /* 靠左右 */
+        }
+        
+        .mybtn-outline-danger {
+            border: 1px solid #fff;
+            color: #fff;
+        }
+        
+        .mybtn-outline-danger:hover {
+            background-color: #fff;
+            color: #f00;
+        }
+        
+        .my-img {
+            width: 36px;
+            height: 36px;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+        
+        .item>p {
+            padding-top: 6px;
+        }
+        /* topbanner */
+        
+        .carousel-item>img {
+            height: 400px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .carousel-item>img {
+                height: 220px;
+            }
+            .my-img {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+            .item>img {
+                width: 50px;
+                height: 50px;
+            }
+        }
