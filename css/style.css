@@ -46,12 +46,6 @@
         }
         /* topbanner */
         
-        @media screen and (min-width: 767px) {
-            .carousel-item>img {
-                height: 500px;
-            }
-        }
-        
         @media screen and (max-width: 768px) {
             .carousel-item>img {
                 height: 220px;
