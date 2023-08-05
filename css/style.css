@@ -121,6 +121,9 @@ p {
     #carouselExampleCaptions {
         padding-top: 40px;
     }
+    .d-md-block {
+        display: block !important;
+    }
 }
 
 .accordion-button:not(.collapsed) {
