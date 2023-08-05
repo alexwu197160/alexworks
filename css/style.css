@@ -134,6 +134,10 @@ p {
     border: 1px 0px 1px 0px solid rgba(255, 255, 255, 0.125);
 }
 
+.owl-carousel img:hover {
+    width: 400px;
+}
+
 .footer {
     background-color: #970404;
     color: #aaa;
