@@ -81,7 +81,7 @@ body {
 }
 
 .mybreadcrumb-bg {
-    background-image: url("images/breadcrumb-bg-danger.png");
+    background-image: url("../images/breadcrumb-bg-danger.png");
     background-repeat: no-repeat;
 }
 
