@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="a"></div>
+    <div id="top"></div>
     <div id="header"></div>
     <!-- topbanner-start -->
     <div id="carouselExampleCaptions" class="carousel slide w-100 mt-5" data-bs-ride="carousel">
@@ -36,6 +36,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14" aria-label="Slide 15"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15" aria-label="Slide 16"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16" aria-label="Slide 17"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -150,6 +151,13 @@
                     <h7>24小时在线客服安全的环境体验，带给您最佳的体验。好友自由对局.</h7>
                 </div>
             </div>
+            <div class="carousel-item">
+                <a href="https://www.alexw.club/blank?pgid=judhl4qd-50998c0b-45d6-4ff5-a62a-c6e2add6372a" target="_blank"><img src="images/ban/works-banner-17.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-1 fw-bold">樂亞娛樂平台</h5>
+                    <h7>安全的环境体验。服务高效、稳定、优质、最全付款方式，业内评分最高平台。</h7>
+                </div>
+            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -162,10 +170,10 @@
     </div>
     <!-- topbanner-end -->
     <!-- nav-breadcrumb start -->
-    <nav aria-label="breadcrumb" class="border-top border-danger border-5 mybreadcrumb-bg">
+    <nav aria-label="breadcrumb" class="border-top border-danger border-5 mybreadcrumb-bg" id="a">
         <ol class="breadcrumb ms-2 pb-1">
             <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">作品全頁式</a></li>
+            <li class="breadcrumb-item"><a href="#top">作品全頁式</a></li>
             <li class="breadcrumb-item active" aria-current="page">了解更多</li>
         </ol>
     </nav>
@@ -582,26 +590,32 @@
     </section>
     <!-- ADworks end -->
 
-    <div class="col-12 bg-light mt-5 py-5"></div>
-    </div>
-
-    <div class="container">
-        <div class="row mt-3">
-
+    <div class="container-fluid bg-danger mt-1">
+        <div class="row g-0 py-3">
+            <div class="col-12 col-md-3"></div>
+            <div class="col-12 col-md-3">
+                <div class="row m-3"><img src="images/p6CVpZ6WmKSW.jpg" alt=""></div>
+            </div>
+            <div class="col-12 col-md-3 text-white align-items-center ">
+                <div class="card-body p-5">
+                    <h3 class="card-title">活著就是要學習，學習不是為了活著
+                    </h3>
+                    <div class="card-text">過去一切的精華盡在我的網頁裡...</div>
+                    <p class="card-text"><small class="text-muted">Last updated 2023/08/08</small></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-3"></div>
         </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div class="row mt-3 border-bottom border-danger">
             <div class="col-3"></div>
             <div class="col-9">
-
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="btn_top_mobile js-btn_top_area">
-        <a href="javascript:void(0);" class="btn btn_top js-btn_top active">top</a>
-    </div>
+    <p class="btn_top"><a href="#top">top</a></p>
 
     <div id="footer"></div>
 
@@ -929,6 +943,81 @@
                 $(this).toggleClass("active");
             });
         });
+    </script>
+    <script>
+        $(function() {
+
+            var UI = {
+                init: function() {
+                    this.quickMenuFn();
+                    this.topBtn();
+                },
+
+                initialize: function() {
+                    this.id = {
+                        target: {
+                            quick: '#quick',
+                            stickyTop: '#footer'
+                        },
+                        topBtnClass: 'btn_top'
+                    };
+                    this.init();
+                },
+
+                quickMenuFn: function() {
+                    var quick = $(this.id.target.quick);
+                    var qTop = parseInt(quick.css('top'));
+
+                    $(window).scroll(function() {
+                        var winTop = $(window).scrollTop();
+
+                        quick.stop().animate({
+                            top: winTop + qTop
+                        }, 400);
+
+                    })
+                },
+
+                topBtn: function() {
+                    var btnLocation = $('.' + this.id.topBtnClass);
+                    var timerId = 0;
+
+                    $(window).on('scroll', function() {
+                        var winTop = $(window).scrollTop();
+                        if (winTop > 200) {
+                            btnLocation.fadeIn();
+                            clearInterval(timerId);
+                            timerId = setInterval(btnEffet, 2000);
+                        } else {
+                            btnLocation.fadeOut();
+                            clearInterval(timerId);
+                        }
+
+                    });
+
+                    function btnEffet() {
+                        btnLocation.fadeTo('300', 0.3).fadeTo('300', 1);
+                    }
+
+                    this.scrollTop(btnLocation);
+                },
+
+                scrollTop: function(eTarget, speed) {
+                    var speed = speed || null;
+                    eTarget.on('click', function() {
+                        $('html, body').animate({
+                            scrollTop: $("body").offset().top
+                        }, speed)
+                    })
+                }
+
+            };
+
+            $(function() {
+                UI.initialize();
+            })
+
+        })
     </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
