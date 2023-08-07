@@ -40,11 +40,21 @@
             width: 200px;
             height: 100px;
             margin: 0 10px 10px 0;
-            /* background-color: #ccc; */
-            /* height: 100vh; */
-            /* background-size: cover; */
-            /* text-align: center;
-            font-size: 2rem; */
+        }
+        
+        @media screen and(max-width: 1440px) {
+            .waterfall-item {
+                width: 200px;
+                height: 100px;
+                margin: 0 10px 10px 0;
+            }
+        }
+        
+        @media screen and (max-width: 378px) {
+            .waterfall-item {
+                width: 80%;
+                margin: 0 auto;
+            }
         }
         
         .waterfall-item.item-1 {
@@ -113,12 +123,6 @@
         
         .waterfall-item.item-17 {
             height: 400px;
-        }
-        
-        @media screen and (max-width: 378px) {
-            .waterfall-item {
-                width: 100%;
-            }
         }
     </style>
 </head>
