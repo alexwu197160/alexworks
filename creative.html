@@ -38,13 +38,15 @@
         
         .waterfall-item {
             width: 200px;
-            height: 100px;
+            /* height: 100px; */
             margin: 0 10px 10px 0;
-            /* background-color: #ccc; */
-            /* height: 100vh; */
-            /* background-size: cover; */
-            /* text-align: center;
-            font-size: 2rem; */
+        }
+        
+        @media screen and (max-width: 768px) {
+            .waterfall-item {
+                width: 100%;
+                height: 200px;
+            }
         }
         
         .waterfall-item.item-1 {
@@ -64,7 +66,7 @@
         }
         
         .waterfall-item.item-5 {
-            height: 180px;
+            height: 110px;
         }
         
         .waterfall-item.item-6 {
@@ -115,7 +117,7 @@
         }
         
         .waterfall-item.item-18 {
-            height: 200px;
+            height: 160px;
         }
         
         .waterfall-item.item-19 {
@@ -139,7 +141,7 @@
         }
         
         .waterfall-item.item-24 {
-            height: 180px;
+            height: 110px;
         }
         
         .waterfall-item.item-25 {
@@ -301,12 +303,6 @@
         .waterfall-item.item-64 {
             height: 180px;
         }
-        
-        @media screen and (max-width: 378px) {
-            .waterfall-item {
-                width: 100%;
-            }
-        }
     </style>
 </head>
 
@@ -318,10 +314,10 @@
             <div class="col-12 body">
                 <div class="row mx-auto mytitles">
                     <h3 Class="border-start border-5 border-danger px-3">廣告素材設計</h3>
-                    <p>彈指間製作專屬的廣告創作工作，有效吸引注意力達到宣傳效果。</p>
+                    <p>製作專屬的廣告創作工作，有效吸引注意力達到宣傳效果。</p>
                 </div>
 
-                <div class="waterfall-container">
+                <div class="waterfall-container" style="width: 376px;">
                     <img class="waterfall-item item-1" src="images/ad/1730.jpg"></img>
                     <img class="waterfall-item item-2" src="images/ad/2001.jpg"></img>
                     <img class="waterfall-item item-3" src="images/ad/adcheneal-2.jpg"></img>
