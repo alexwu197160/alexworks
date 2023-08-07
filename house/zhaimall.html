@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="https://s1.pearlcdn.com/TW/contents/css/lib/owl.carousel.min.css">
+    <title>Hello, Alex Works!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/macy.js">
+
+</head>
+
+<body>
+    <div><img src="images/huose.jpg" alt="" style="width: 100%;"></div>
+
+    <p class="btn_top"><a href="#top">top</a></p>
+
+    <div id="footer"></div>
+
+
+
+    <!-- top-btn -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        img {
+            max-width: 100%;
+            border: 0px;
+        }
+        
+        ul,
+        ol {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+            outline: none;
+            transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+        }
+        
+        a:focus,
+        a:active,
+        a:visited,
+        a:hover {
+            text-decoration: none;
+            outline: none;
+        }
+        
+        a:hover {
+            color: yellow;
+        }
+        
+        .ad-title {
+            margin-bottom: 16px;
+            padding-bottom: 26px;
+            font-size: 36px;
+            line-height: 28px;
+            font-weight: 700;
+            position: relative;
+            text-transform: capitalize;
+        }
+        
+        h3 {
+            margin: 0 0 10px;
+            font-size: 28px;
+            line-height: 36px;
+        }
+        
+        button {
+            outline: none !important;
+        }
+        /*******  *********/
+        /* -------- title style ------- */
+        
+        .line-title {
+            position: relative;
+            width: 100%;
+        }
+        
+        .line-title::before,
+        .line-title::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 4px;
+            border-radius: 2px;
+        }
+        
+        .line-title::before {
+            width: 100%;
+            background: #fcd8d8;
+        }
+        
+        .line-title::after {
+            width: 32px;
+            background: #e73700;
+        }
+        /******* Middle section CSS Start ******/
+        /* -------- Landing page ------- */
+        /* .game-section {
+            padding: 60px 50px;
+        } */
+        
+        .game-section .owl-stage {
+            margin: 15px 0;
+            display: flex;
+            display: -webkit-flex;
+        }
+        
+        .game-section .item {
+            margin: 0 15px 60px;
+            width: 320px;
+            height: 400px;
+            display: flex;
+            display: -webkit-flex;
+            align-items: flex-end;
+            -webkit-align-items: flex-end;
+            background: #343434 no-repeat center center / cover;
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+            cursor: pointer;
+        }
+        
+        .game-section .item.active {
+            width: 800px;
+            box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+            -webkit-box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+        }
+        
+        .game-section .item:after {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .0));
+        }
+        
+        .game-section .item-desc {
+            padding: 0 24px 12px;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transform: translateY(calc(100% - 54px));
+            -webkit-transform: translateY(calc(100% - 54px));
+            transition: all 0.4s ease-in-out;
+            -webkit-transition: all 0.4s ease-in-out;
+        }
+        
+        .game-section .item.active .item-desc {
+            transform: none;
+            -webkit-transform: none;
+        }
+        
+        .game-section .item-desc p {
+            opacity: 0;
+            -webkit-transform: translateY(32px);
+            transform: translateY(32px);
+            transition: all 0.4s ease-in-out 0.2s;
+            -webkit-transition: all 0.4s ease-in-out 0.2s;
+        }
+        
+        .game-section .item.active .item-desc p {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        
+        .game-section .owl-theme.custom-carousel .owl-dots {
+            margin-top: -20px;
+            position: relative;
+            z-index: 5;
+        }
+        /******** Middle section CSS End *******/
+        /***** responsive css Start ******/
+        
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .ad-title {
+                margin-bottom: 24px;
+            }
+            h3 {
+                margin: 0 0 8px;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            /* -------- Landing page ------- */
+            .game-section {
+                padding: 50px 30px;
+            }
+            .game-section .item {
+                margin: 0 12px 60px;
+                width: 260px;
+                height: 360px;
+            }
+            .game-section .item.active {
+                width: 400px;
+            }
+            .game-section .item-desc {
+                transform: translateY(calc(100% - 46px));
+                -webkit-transform: translateY(calc(100% - 46px));
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 991px) {
+            .ad-title {
+                margin-bottom: 32px;
+            }
+            h3 {
+                margin: 0 0 8px;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            .line-title {
+                width: 330px;
+            }
+            /* -------- Landing page ------- */
+            .game-section .item {
+                margin: 0 12px 60px;
+                width: 240px;
+                height: 330px;
+            }
+            .game-section .item.active {
+                width: 360px;
+            }
+            .game-section .item-desc {
+                transform: translateY(calc(100% - 42px));
+                -webkit-transform: translateY(calc(100% - 42px));
+            }
+        }
+        
+        @media (max-width: 767px) {
+            body {
+                font-size: 14px;
+            }
+            .ad-title {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            h3 {
+                margin: 0 0 8px;
+                font-size: 19px;
+                line-height: 24px;
+            }
+            .line-title {
+                width: 250px;
+            }
+            /* -------- Landing page ------- */
+            .game-section .item {
+                margin: 0 10px 40px;
+                width: 340px;
+                height: 280px;
+            }
+            .game-section .item.active {
+                width: 270px;
+                box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+                -webkit-box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+            }
+            .game-section .item-desc {
+                padding: 0 14px 5px;
+                transform: translateY(calc(100% - 42px));
+                -webkit-transform: translateY(calc(100% - 42px));
+            }
+        }
+    </style>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script>
+        // for 循环遍历heights数组，返回最高的高度和对应的列数
+        function getMaxCoulmn(columnCount, heights) {
+            let maxHeight = 0;
+            let maxIndex = 0
+            for (i = 0; i < columnCount; i++) {
+                if (heights[i] > maxHeight) {
+                    maxIndex = i;
+                    maxHeight = heights[i];
+                }
+            }
+            return {
+                maxHeight: maxHeight,
+                maxIndex: maxIndex
+            };
+        }
+
+        // 根容器
+        var body = document.querySelector('.body');
+        // 瀑布流的承载容器，动态的根据显示列数更新其宽度
+        // 通过设置左右margin为auto，可以使其在根容器中居中显示 
+        var container = document.querySelector('.waterfall-container');
+        // 所有的瀑布流对象
+        var items = document.querySelectorAll('.waterfall-item');
+        // 自定义间距，与css设置的margin大小一致
+        var gap = 10;
+        // 一个对象的宽度，包含对象自身宽度加上右边距
+        var itemWidth = items[0].offsetWidth + gap;
+
+        function waterFall() {
+            // 获取可存在的最大列数
+            let columnCount = parseInt(body.offsetWidth / itemWidth);
+            // 高度数组，包含所有列的高度
+            let heights = [];
+            // 最大列高
+            let maxHeight = 0;
+            // 最大列在heights中的下表索引
+            let maxIndex = 0;
+            // 设置瀑布流容器的宽度，使其恰好包裹所有元素
+            container.style.width = itemWidth * columnCount + 'px';
+            // 遍历每一项元素
+            for (let i = 0; i < items.length; i++) {
+                // 第一层，将marginTop设为0即可
+                if (i < columnCount) {
+                    items[i].style.marginTop = 0;
+                    // 获取当前元素高度
+                    let itemHeight = items[i].offsetHeight + gap;
+                    // 将高度赋值给高度数组的对应列
+                    heights[i] = itemHeight;
+                    // 如果是一行的最后一项元素，说明当前一层的元素已经全部布置完成
+                    // 此时遍历高度数组，获取高度最高的一项，将其存入maxHeight和maxIndex中
+                    if (i == columnCount - 1) {
+                        let temp = getMaxCoulmn(columnCount, heights);
+                        maxHeight = temp.maxHeight;
+                        maxIndex = temp.maxIndex;
+                    }
+                    // 其他层
+                } else {
+                    // 判断当前元素处于第几列
+                    let column = i % columnCount;
+                    // 获取当前元素高度
+                    let itemHeight = items[i].offsetHeight + gap;
+                    // 设置元素的上边距
+                    // 其偏移量的计算方法是：
+                    // 所有列高度最大值 - 当前列的高度
+                    items[i].style.marginTop = '-' + (maxHeight - heights[column]) + 'px';
+                    // 更新高度数组
+                    heights[column] += itemHeight;
+                    // 当前元素为一行最后一项或整个页面最后一个元素触发，更新高度的最大值
+                    if (column == columnCount - 1 || i == items.length - 1) {
+                        let temp = getMaxCoulmn(columnCount, heights);
+                        maxHeight = temp.maxHeight;
+                        maxIndex = temp.maxIndex;
+                    }
+                }
+            }
+        }
+
+
+        // 当页面加载时，进行排版
+        window.onload = function() {
+            waterFall();
+        }
+
+        // 当页面加载时，进行排版
+        window.onresize = function() {
+            waterFall();
+        }
+    </script>
+
+    <script>
+        $(function() {
+
+            var UI = {
+                init: function() {
+                    this.quickMenuFn();
+                    this.topBtn();
+                },
+
+                initialize: function() {
+                    this.id = {
+                        target: {
+                            quick: '#quick',
+                            stickyTop: '#footer'
+                        },
+                        topBtnClass: 'btn_top'
+                    };
+                    this.init();
+                },
+
+                quickMenuFn: function() {
+                    var quick = $(this.id.target.quick);
+                    var qTop = parseInt(quick.css('top'));
+
+                    $(window).scroll(function() {
+                        var winTop = $(window).scrollTop();
+
+                        quick.stop().animate({
+                            top: winTop + qTop
+                        }, 400);
+
+                    })
+                },
+
+                topBtn: function() {
+                    var btnLocation = $('.' + this.id.topBtnClass);
+                    var timerId = 0;
+
+                    $(window).on('scroll', function() {
+                        var winTop = $(window).scrollTop();
+                        if (winTop > 200) {
+                            btnLocation.fadeIn();
+                            clearInterval(timerId);
+                            timerId = setInterval(btnEffet, 2000);
+                        } else {
+                            btnLocation.fadeOut();
+                            clearInterval(timerId);
+                        }
+
+                    });
+
+                    function btnEffet() {
+                        btnLocation.fadeTo('300', 0.3).fadeTo('300', 1);
+                    }
+
+                    this.scrollTop(btnLocation);
+                },
+
+                scrollTop: function(eTarget, speed) {
+                    var speed = speed || null;
+                    eTarget.on('click', function() {
+                        $('html, body').animate({
+                            scrollTop: $("body").offset().top
+                        }, speed)
+                    })
+                }
+
+            };
+
+            $(function() {
+                UI.initialize();
+            })
+
+        })
+    </script>
+
+    <script>
+        $(function() {
+            $("#header").load("layouts/header.html");
+            $("#footer").load("layouts/footer.html");
+        });
+        $(".custom-carousel").owlCarousel({
+            autoWidth: true,
+            loop: true
+        });
+        $(document).ready(function() {
+            $(".custom-carousel .item").click(function() {
+                $(".custom-carousel .item").not($(this)).removeClass("active");
+                $(this).toggleClass("active");
+            });
+        });
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
+    -->
+</body>
+
+</html>

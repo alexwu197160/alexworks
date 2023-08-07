@@ -37,6 +37,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14" aria-label="Slide 15"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15" aria-label="Slide 16"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16" aria-label="Slide 17"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17" aria-label="Slide 18"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -156,6 +157,13 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5 class="fs-1 fw-bold">西式餐點WEB介紹</h5>
                     <h7>美味西式餐點約會聚餐。</h7>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="/house/zhaimall.html" target="_blank"><img src="images/ban/works-banner-18.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-1 fw-bold">宅商城宅經濟</h5>
+                    <h7>零售通路「宅經濟」的興起推出自有網購平台</h7>
                 </div>
             </div>
         </div>
@@ -664,6 +672,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://s1.pearlcdn.com/TW/contents/js/lib/owl.carousel.min.js"></script>
 
+    <!-- top-btn -->
     <style>
         * {
             margin: 0px;
@@ -706,7 +715,7 @@
         }
         
         a:hover {
-            color: #e73700;
+            color: yellow;
         }
         
         .ad-title {
@@ -728,7 +737,7 @@
         button {
             outline: none !important;
         }
-        /******* Common Element CSS End *********/
+        /*******  *********/
         /* -------- title style ------- */
         
         .line-title {
@@ -928,22 +937,7 @@
             }
         }
     </style>
-    <script>
-        $(function() {
-            $("#header").load("layouts/header.html");
-            $("#footer").load("layouts/footer.html");
-        });
-        $(".custom-carousel").owlCarousel({
-            autoWidth: true,
-            loop: true
-        });
-        $(document).ready(function() {
-            $(".custom-carousel .item").click(function() {
-                $(".custom-carousel .item").not($(this)).removeClass("active");
-                $(this).toggleClass("active");
-            });
-        });
-    </script>
+
     <script>
         $(function() {
 
@@ -1018,6 +1012,23 @@
             })
 
         })
+    </script>
+
+    <script>
+        $(function() {
+            $("#header").load("layouts/header.html");
+            $("#footer").load("layouts/footer.html");
+        });
+        $(".custom-carousel").owlCarousel({
+            autoWidth: true,
+            loop: true
+        });
+        $(document).ready(function() {
+            $(".custom-carousel .item").click(function() {
+                $(".custom-carousel .item").not($(this)).removeClass("active");
+                $(this).toggleClass("active");
+            });
+        });
     </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
