@@ -1,11 +1,277 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* Icon 1 */
+    
+    #nav-icon1,
+    #nav-icon2,
+    #nav-icon3,
+    #nav-icon4 {
+        width: 32px;
+        height: 32px;
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+    
+    #nav-icon1 span,
+    #nav-icon3 span,
+    #nav-icon4 span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #fff;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+    
+    #nav-icon1 span:nth-child(1) {
+        top: 0px;
+    }
+    
+    #nav-icon1 span:nth-child(2) {
+        top: 10px;
+    }
+    
+    #nav-icon1 span:nth-child(3) {
+        top: 20px;
+    }
+    
+    #nav-icon1.open span:nth-child(1) {
+        top: 18px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    
+    #nav-icon1.open span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+    }
+    
+    #nav-icon1.open span:nth-child(3) {
+        top: 18px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+    /* Icon 2 */
+    
+    #nav-icon2 span {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 50%;
+        background: #d3531a;
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+    
+    #nav-icon2 span:nth-child(even) {
+        left: 50%;
+        border-radius: 0 9px 9px 0;
+    }
+    
+    #nav-icon2 span:nth-child(odd) {
+        left: 0px;
+        border-radius: 9px 0 0 9px;
+    }
+    
+    #nav-icon2 span:nth-child(1),
+    #nav-icon2 span:nth-child(2) {
+        top: 0px;
+    }
+    
+    #nav-icon2 span:nth-child(3),
+    #nav-icon2 span:nth-child(4) {
+        top: 18px;
+    }
+    
+    #nav-icon2 span:nth-child(5),
+    #nav-icon2 span:nth-child(6) {
+        top: 36px;
+    }
+    
+    #nav-icon2.open span:nth-child(1),
+    #nav-icon2.open span:nth-child(6) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    #nav-icon2.open span:nth-child(2),
+    #nav-icon2.open span:nth-child(5) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    
+    #nav-icon2.open span:nth-child(1) {
+        left: 5px;
+        top: 7px;
+    }
+    
+    #nav-icon2.open span:nth-child(2) {
+        left: calc(50% - 5px);
+        top: 7px;
+    }
+    
+    #nav-icon2.open span:nth-child(3) {
+        left: -50%;
+        opacity: 0;
+    }
+    
+    #nav-icon2.open span:nth-child(4) {
+        left: 100%;
+        opacity: 0;
+    }
+    
+    #nav-icon2.open span:nth-child(5) {
+        left: 5px;
+        top: 29px;
+    }
+    
+    #nav-icon2.open span:nth-child(6) {
+        left: calc(50% - 5px);
+        top: 29px;
+    }
+    /* Icon 3 */
+    
+    #nav-icon3 span:nth-child(1) {
+        top: 0px;
+    }
+    
+    #nav-icon3 span:nth-child(2),
+    #nav-icon3 span:nth-child(3) {
+        top: 18px;
+    }
+    
+    #nav-icon3 span:nth-child(4) {
+        top: 36px;
+    }
+    
+    #nav-icon3.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    
+    #nav-icon3.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    
+    #nav-icon3.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    
+    #nav-icon3.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    /* Icon 4 */
+    
+    #nav-icon4 span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+    
+    #nav-icon4 span:nth-child(2) {
+        top: 18px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+    
+    #nav-icon4 span:nth-child(3) {
+        top: 36px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+    
+    #nav-icon4.open span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: -3px;
+        left: 8px;
+    }
+    
+    #nav-icon4.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+    
+    #nav-icon4.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 39px;
+        left: 8px;
+    }
+    
+    .navbar-dark .navbar-toggler {
+        color: rgba(255, 255, 255, 0);
+        border-color: rgba(255, 255, 255, 0);
+    }
+</style>
 <navbar class="navbar navbar-expand-lg navbar-dark mybg-danger bg-gradient p-4">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="images/alex-logo.png" alt="Bootstrap" width="78" height="30">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>                
+                    </button> -->
+        <div class="navbar-toggler" type="button" id="nav-icon1" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <!-- mx-auto 置中 me-auto 預設靠左 -->
@@ -16,7 +282,7 @@
                     <a class="nav-link" href="allworks.html" target="_self">Collected Works</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="servce.html">Servce</a>
+                    <a class="nav-link" href="service.html">Service</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Works Area</a>
@@ -74,4 +340,89 @@
         window.addEventListener("mousewheel", MouseWheel, false);
         window.addEventListener("DOMMouseScroll", MouseWheel, false);
     }
+
+    // Menu navburger
+    $(document).ready(function() {
+        $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function() {
+            $(this).toggleClass('open');
+        });
+    });
+</script>
+
+
+<!-- btn-top -->
+<script>
+    $(function() {
+
+        var UI = {
+            init: function() {
+                this.quickMenuFn();
+                this.topBtn();
+            },
+
+            initialize: function() {
+                this.id = {
+                    target: {
+                        quick: '#quick',
+                        stickyTop: '#footer'
+                    },
+                    topBtnClass: 'btn_top'
+                };
+                this.init();
+            },
+
+            quickMenuFn: function() {
+                var quick = $(this.id.target.quick);
+                var qTop = parseInt(quick.css('top'));
+
+                $(window).scroll(function() {
+                    var winTop = $(window).scrollTop();
+
+                    quick.stop().animate({
+                        top: winTop + qTop
+                    }, 400);
+
+                })
+            },
+
+            topBtn: function() {
+                var btnLocation = $('.' + this.id.topBtnClass);
+                var timerId = 0;
+
+                $(window).on('scroll', function() {
+                    var winTop = $(window).scrollTop();
+                    if (winTop > 200) {
+                        btnLocation.fadeIn();
+                        clearInterval(timerId);
+                        timerId = setInterval(btnEffet, 2000);
+                    } else {
+                        btnLocation.fadeOut();
+                        clearInterval(timerId);
+                    }
+
+                });
+
+                function btnEffet() {
+                    btnLocation.fadeTo('300', 0.3).fadeTo('300', 1);
+                }
+
+                this.scrollTop(btnLocation);
+            },
+
+            scrollTop: function(eTarget, speed) {
+                var speed = speed || null;
+                eTarget.on('click', function() {
+                    $('html, body').animate({
+                        scrollTop: $("body").offset().top
+                    }, speed)
+                })
+            }
+
+        };
+
+        $(function() {
+            UI.initialize();
+        })
+
+    })
 </script>

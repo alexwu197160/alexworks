@@ -27,6 +27,12 @@
             font-size: 2rem; */
         }
         
+        .waterfall-item:hover {
+            -moz-transition: border-color 0.5s ease-in-out;
+            transition: border-color 0.1s ease-in-out;
+            border: 5px solid #f00;
+        }
+        
         .waterfall-item.item-1 {
             height: 140px;
         }
@@ -44,11 +50,11 @@
         }
         
         .waterfall-item.item-5 {
-            height: 180px;
+            height: 110px;
         }
         
         .waterfall-item.item-6 {
-            height: 130px;
+            height: 150px;
         }
         
         .waterfall-item.item-7 {
@@ -95,11 +101,11 @@
         }
         
         .waterfall-item.item-18 {
-            height: 200px;
+            height: 240px;
         }
         
         .waterfall-item.item-19 {
-            height: 130px;
+            height: 170px;
         }
         
         .waterfall-item.item-20 {
@@ -139,19 +145,19 @@
         }
         
         .waterfall-item.item-29 {
-            height: 270px;
+            height: 210px;
         }
         
         .waterfall-item.item-30 {
-            height: 140px;
+            height: 240px;
         }
         
         .waterfall-item.item-31 {
-            height: 140px;
+            height: 160px;
         }
         
         .waterfall-item.item-32 {
-            height: 140px;
+            height: 160px;
         }
         
         .waterfall-item.item-33 {
@@ -159,7 +165,7 @@
         }
         
         .waterfall-item.item-34 {
-            height: 140px;
+            height: 110px;
         }
         
         .waterfall-item.item-35 {
@@ -171,7 +177,7 @@
         }
         
         .waterfall-item.item-37 {
-            height: 140px;
+            height: 110px;
         }
         
         .waterfall-item.item-38 {
@@ -179,7 +185,7 @@
         }
         
         .waterfall-item.item-39 {
-            height: 130px;
+            height: 110px;
         }
         
         .waterfall-item.item-40 {
@@ -191,7 +197,7 @@
         }
         
         .waterfall-item.item-42 {
-            height: 180px;
+            height: 150px;
         }
         
         .waterfall-item.item-43 {
@@ -211,7 +217,7 @@
         }
         
         .waterfall-item.item-47 {
-            height: 240px;
+            height: 190px;
         }
         
         .waterfall-item.item-48 {
@@ -223,7 +229,7 @@
         }
         
         .waterfall-item.item-50 {
-            height: 140px;
+            height: 110px;
         }
         
         .waterfall-item.item-51 {
@@ -263,7 +269,7 @@
         }
         
         .waterfall-item.item-60 {
-            height: 230px;
+            height: 250px;
         }
         
         .waterfall-item.item-61 {
@@ -271,7 +277,7 @@
         }
         
         .waterfall-item.item-62 {
-            height: 230px;
+            height: 280px;
         }
         
         .waterfall-item.item-63 {
@@ -279,15 +285,15 @@
         }
         
         .waterfall-item.item-64 {
-            height: 110px;
+            height: 140px;
         }
         
         .waterfall-item.item-65 {
-            height: 110px;
+            height: 140px;
         }
         
         .waterfall-item.item-66 {
-            height: 180px;
+            height: 250px;
         }
         
         .waterfall-item.item-67 {
@@ -299,7 +305,7 @@
         }
         
         .waterfall-item.item-69 {
-            height: 180px;
+            height: 130px;
         }
         
         .waterfall-item.item-70 {
@@ -319,7 +325,7 @@
         }
         
         .waterfall-item.item-74 {
-            height: 120px;
+            height: 140px;
         }
         
         .waterfall-item.item-75 {
@@ -331,35 +337,35 @@
         }
         
         .waterfall-item.item-77 {
-            height: 100px;
+            height: 60px;
         }
         
         .waterfall-item.item-78 {
-            height: 90px;
+            height: 60px;
         }
         
         .waterfall-item.item-79 {
-            height: 90px;
+            height: 60px;
         }
         
         .waterfall-item.item-80 {
-            height: 100px;
+            height: 60px;
         }
         
         .waterfall-item.item-81 {
-            height: 90px;
+            height: 60px;
         }
         
         .waterfall-item.item-82 {
-            height: 90px;
+            height: 60px;
         }
         
         .waterfall-item.item-83 {
-            height: 130px;
+            height: 100px;
         }
         
         .waterfall-item.item-84 {
-            height: 150px;
+            height: 110px;
         }
         
         .waterfall-item.item-85 {
@@ -383,15 +389,15 @@
         }
         
         .waterfall-item.item-90 {
-            height: 130px;
+            height: 290px;
         }
         
         .waterfall-item.item-91 {
-            height: 240px;
+            height: 340px;
         }
         
         .waterfall-item.item-92 {
-            height: 190px;
+            height: 240px;
         }
         
         .waterfall-item.item-93 {
@@ -411,7 +417,11 @@
         }
         
         .waterfall-item.item-97 {
-            height: 150px;
+            height: 90px;
+        }
+        
+        .waterfall-item.item-98 {
+            height: 120px;
         }
         
         @media screen and (max-width: 378px) {

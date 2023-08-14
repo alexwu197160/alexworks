@@ -9,17 +9,247 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Hello, MyWorks!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        * {
+            list-style: none;
+            text-decoration: none;
+            margin: 0;
+        }
+        /* force scrollbar */
+        
+        html {
+            overflow-y: scroll;
+        }
+        
+        ul {
+            padding: 0;
+        }
+        
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+        
+        .clearfix {
+            display: inline-block;
+        }
+        /* start commented backslash hack \*/
+        
+        * html .clearfix {
+            height: 1%;
+        }
+        
+        .clearfix {
+            display: block;
+        }
+        /* close commented backslash hack */
+        
+        .layout {
+            margin: 0 auto;
+            max-width: 1170px;
+            width: 100%;
+            padding: 0 15px;
+        }
+        
+        .grid-3 {
+            width: 25%;
+            float: left;
+            min-height: 1px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+        }
+        
+        footer {
+            background-color: #4f0f0f;
+        }
+        
+        .myfooter-wrapper {
+            padding: 50px 0;
+        }
+        
+        .myfooter-text {
+            color: #b54343;
+            font-size: 12px;
+            margin: 20px 0 0;
+            line-height: 1.5em;
+        }
+        
+        footer .myfooter-heading {
+            color: #973b3b;
+            font: 18px/19px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #973b3b;
+        }
+        /* .border-mydanger {
+    border-bottom: 1px solid rgb(146, 60, 60);
+} */
+        
+        .myfooter-wrapper ul.myfootermenu,
+        .myfooter-contact,
+        .myfooterblog {
+            margin-top: 32px;
+        }
+        
+        .myfootermenu>li {
+            line-height: 25px;
+        }
+        
+        .myfooter-wrapper ul.myfootermenu li a::before {
+            content: "-";
+            margin: 0 5px 0 0;
+        }
+        
+        .myfootermenu li a {
+            color: #dcdcdc;
+            font-size: 14px;
+            line-height: 34px;
+            text-transform: capitalize;
+        }
+        
+        .myfooter-contact li i {
+            font-size: 14px;
+            margin: 0 8px 0 0;
+            color: #fff;
+        }
+        
+        .myfooter-contact li span {
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        .myfooter-contact li,
+        .myfooter-contact li a {
+            color: #c7c7c7;
+            font: 13px/28px "Open Sans", sans-serif;
+            letter-spacing: 1.2px;
+        }
+        
+        .myfooterblog li,
+        .myfooterblog li a {
+            color: #b4b4b4;
+            font: 13px/18px "Open Sans", sans-serif;
+            letter-spacing: 1.2px;
+            padding-bottom: 10px;
+        }
+        
+        .myfooterblog li p {
+            color: #c7c7c7;
+            font: italic 12px/18px "Open Sans", sans-serif;
+        }
+        
+        footer a:hover {
+            color: yellow;
+        }
+        
+        .footer {
+            background-color: #970404;
+            color: #aaa;
+            font-size: 15px;
+            text-align: center;
+            width: 100%;
+            padding: 20px 0;
+        }
+        
+        @media (max-width:980px) {
+            .layout {
+                width: 767px;
+            }
+            .grid-3 {
+                width: 50%;
+            }
+            .myfooter-heading {
+                margin-top: 18px;
+                color: #fff;
+                border-bottom: 1px solid #973b3b;
+            }
+            .myfooter-wrapper {
+                padding: 50px 0 0 0;
+            }
+        }
+        
+        @media (max-width:640px) {
+            .layout {
+                width: 300px;
+            }
+            .grid-3 {
+                width: 100%;
+            }
+            .myfootermenu>li {
+                display: inline-block;
+                float: none;
+                line-height: 25px;
+            }
+        }
+    </style>
 
 </head>
 
 <body>
 
-
-    <div>
-        <div class="footer pagination justify-content-center">&copy; copyright 2023 by Alex in csscoke</div>
-    </div>
-
-
+    <footer>
+        <div class="layout">
+            <div class="myfooter-wrapper clearfix">
+                <div class="grid-3 myfooter-logo">
+                    <a class="pb-3" href="index.html"><img alt="html layout logo" src="/images/alex-logo.png"></a>
+                    <p class="myfooter-text">這是我半手刻 RWD 網站作品集，將他做成根據裝置大小不同，自動變換排版方式，網址目前顯示不安全因為預算考量，沒有申購SSL網站設定機制，這個網站屬靜態網頁純前端CSS&HTML&JS應用。</p>
+                </div>
+                <div class="grid-3">
+                    <p class="myfooter-heading border-mydanger pb-3">link 快速連結</p>
+                    <ul class="myfootermenu">
+                        <li>
+                            <a href="index.html">About Us 關於我</a>
+                        </li>
+                        <li>
+                            <a href="service.html">Services 服務</a>
+                        </li>
+                        <li>
+                            <a href="allworks.html">Collected Works 總集</a>
+                        </li>
+                        <li>
+                            <a href="#">myFacebook</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-3">
+                    <p class="myfooter-heading border-mydanger pb-3">Connection</p>
+                    <ul class="myfooter-contact">
+                        <li>
+                            <i class="fa fa-phone"></i><span>phone:</span> <a href="#">+886 916151455</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o"></i><span>e-mail:</span> <a href="alexwu71@gaiml.com">alexwu71@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-chrome"></i><span>web:</span> <a href="http://alexs.com.tw">alexs.com.tw</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-3">
+                    <p class="myfooter-heading border-mydanger pb-3">recent posts</p>
+                    <ul class="myfooterblog">
+                        <li>
+                            <a href="#">This work website is completed</a>
+                            <p>11th August 2023</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="footer pagination justify-content-center">&copy; copyright 2023 by Alex in csscoke</div>
+        </div>
+    </footer>
 
 </body>
 
