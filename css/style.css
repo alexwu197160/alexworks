@@ -106,10 +106,6 @@
         margin-top: 0px;
     }
     
-    #carouselExampleCaptions {
-        /* padding-top: 40px; */
-    }
-    
     .list-group-item.active {
         z-index: 2;
         color: #f00;
