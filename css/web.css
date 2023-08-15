@@ -18,19 +18,20 @@
         
         .waterfall-item {
             width: 200px;
-            height: 100px;
             margin: 0 10px 10px 0;
-            /* background-color: #ccc; */
-            /* height: 100vh; */
-            /* background-size: cover; */
-            /* text-align: center;
-            font-size: 2rem; */
         }
         
         .waterfall-item:hover {
             -moz-transition: border-color 0.5s ease-in-out;
             transition: border-color 0.1s ease-in-out;
             border: 5px solid #f00;
+        }
+        
+        @media screen and (max-width: 378px) {
+            .waterfall-item {
+                width: 80%;
+                margin: 0 0 10px 25px;
+            }
         }
         
         .waterfall-item.item-1 {
@@ -422,10 +423,4 @@
         
         .waterfall-item.item-98 {
             height: 120px;
-        }
-        
-        @media screen and (max-width: 378px) {
-            .waterfall-item {
-                width: 100%;
-            }
         }

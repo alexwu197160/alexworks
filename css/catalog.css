@@ -18,7 +18,6 @@
         
         .waterfall-item {
             width: 200px;
-            height: 100px;
             margin: 0 10px 10px 0;
         }
         
@@ -28,9 +27,10 @@
             border: 5px solid #f00;
         }
         
-        @media screen and (max-width: 378px) {
+        @media screen and (max-width: 768px) {
             .waterfall-item {
-                width: 100%;
+                width: 80%;
+                margin: 0 0 10px 25px;
             }
         }
         
