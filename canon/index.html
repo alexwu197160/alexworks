@@ -21,71 +21,53 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>CANON企業型彩色雷射印表機</title>
     <style>
-        body {
-            background: #dfdfdf center repeat-x;
-            font-family: Verdana, Arial, Helvetica, sans-serif;
+        .row {
+            background: #dfdfdf;
+            height: 40vh;
         }
         
-        .wrapper {
-            width: 100%;
-            height: 780px;
-            border: 5px solid #f00;
-        }
-        
-        #wrapper {
+        .headimg {
             width: 680px;
-            margin: auto;
         }
         
-        img {
-            margin: 0 10px;
-            padding: 60px 0 0 0;
+        .container-fluid {
+            height: 56vh;
         }
         
-        h1 {
-            font-size: 24px;
-            font-family: Verdana, Arial, Helvetica, sans-serif;
-            margin: 10px auto;
-        }
-        
-        p {
-            float: left;
-            line-height: 2em;
-            padding: 0;
-            margin: 0;
-        }
-        
-        a {
-            color: #000000;
-            text-decoration: none;
-        }
-        
-        a:visited {
-            color: #000000;
-            text-decoration: none;
-        }
-        
-        a:hover {
+        h3 {
             color: #777;
-            text-decoration: none;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .headimg {
+                display: none;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="loader"></div>
-    <div class="wrapper">
-        <div class="card-index border border-danger border-5 bg-danger text-white"><button type="button" onclick="window.close();" class="btn-close btn-close-white" aria-label="Close"></button>
-            <div id="wrapper">
-                <p><img src="header.jpg" /></a>
-                </p>
-                <p>
-                    <a href="1/demo_1.html" target="_blank">version A<br />
-				<img src="1.jpg" /></a></p>
-                <p>
-                    <a href="2/index.html" target="_blank">version B<br />
-				<img src="2.jpg" /></a></p>
+    <div class="container-fluid border border-danger border-5 bg-danger card-index">
+        <div class=""><button type="button" onclick="window.close();" class="btn-close btn-close-white" aria-label="Close"></button>
+            <div class="row">
+                <div class="col-12 headimg mx-auto pt-3"><img src="header.jpg"></div>
+
+                <div class="container">
+                    <div class="row pt-3">
+                        <div class="col-12 col-md-6 text-center">
+                            <h3>version A</h3>
+                            <a href="1/demo_1.html" target="_blank"><img src="1.jpg"></a>
+                        </div>
+                        <div class="col-12 col-md-6 text-center">
+                            <h3>version B</h3>
+                            <a href="2/index.html" target="_blank"><img src="2.jpg"></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
         </div>
     </div>
 </body>
