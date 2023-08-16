@@ -24,6 +24,11 @@
         body {
             background: #dfdfdf center repeat-x;
             font-family: Verdana, Arial, Helvetica, sans-serif;
+        }
+        
+        .wrapper {
+            width: 100%;
+            height: 780px;
             border: 5px solid #f00;
         }
         
@@ -69,16 +74,18 @@
 
 <body>
     <div class="loader"></div>
-    <div class="card-index border border-danger border-5 bg-danger text-white"><button type="button" onclick="window.close();" class="btn-close btn-close-white" aria-label="Close"></button>
-        <div id="wrapper">
-            <p><img src="header.jpg" /></a>
-            </p>
-            <p>
-                <a href="1/demo_1.html" target="_blank">version A<br />
+    <div class="wrapper">
+        <div class="card-index border border-danger border-5 bg-danger text-white"><button type="button" onclick="window.close();" class="btn-close btn-close-white" aria-label="Close"></button>
+            <div id="wrapper">
+                <p><img src="header.jpg" /></a>
+                </p>
+                <p>
+                    <a href="1/demo_1.html" target="_blank">version A<br />
 				<img src="1.jpg" /></a></p>
-            <p>
-                <a href="2/index.html" target="_blank">version B<br />
+                <p>
+                    <a href="2/index.html" target="_blank">version B<br />
 				<img src="2.jpg" /></a></p>
+            </div>
         </div>
     </div>
 </body>
