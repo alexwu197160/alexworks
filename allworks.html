@@ -24,6 +24,7 @@
 <body>
     <div id="top"></div>
     <div id="header"></div>
+    <div class="loader"></div>
     <nav aria-label="breadcrumb" class="border-top border-danger border-5 mybreadcrumb-t" id="a">
         <ol class="breadcrumb ms-2 pb-1">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -271,6 +272,13 @@
             border: 0px;
         }
     </style>
+    <!-- loader -->
+    <script>
+        window.addEventListener('load', (e) => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+
     <script>
         // for 循环遍历heights数组，返回最高的高度和对应的列数
         function getMaxCoulmn(columnCount, heights) {
