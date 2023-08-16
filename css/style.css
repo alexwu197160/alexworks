@@ -1,5 +1,5 @@
         body {
-            font-family: Arial, "Noto Sans TC", "LiHei Pro", "Microsoft JhengHei", sans-serif;
+            font-family: Arial, "Noto Sans TC", "LiHei Pro", "Microsoft JhengHei", 'Noto Sans TC', '微軟正黑體', sans-serif;
         }
         /* loader */
         
@@ -208,6 +208,7 @@
                 display: block !important;
             }
         }
+        /* Accordion */
         
         .accordion-button:not(.collapsed) {
             color: #970404;
