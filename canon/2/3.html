@@ -33,11 +33,18 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <div class="border border-danger border-5 text-white"><button type="button" onclick="window.close();" class="btn-close btn-close-danger" aria-label="Close"></button>
         <div>
             <a href="4.html"><img src="right.jpg" /></a>
         </div>
     </div>
 </body>
+<!-- loader -->
+<script>
+    window.addEventListener('load', (e) => {
+        document.body.classList.add('loaded');
+    });
+</script>
 
 </html>

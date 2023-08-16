@@ -13,10 +13,17 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <div id="content" class="border border-danger border-5 bg-danger text-white"><button type="button" onclick="window.close();" class="btn-close btn-close-white" aria-label="Close"></button>
         <div><img src="images/new-index.jpg" alt="" width="100%"></div>
     </div>
 
 </body>
+<!-- loader -->
+<script>
+    window.addEventListener('load', (e) => {
+        document.body.classList.add('loaded');
+    });
+</script>
 
 </html>

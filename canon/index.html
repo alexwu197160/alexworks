@@ -68,6 +68,7 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <div class="card-index border border-danger border-5 bg-danger text-white"><button type="button" onclick="window.close();" class="btn-close btn-close-white" aria-label="Close"></button>
         <div id="wrapper">
             <p><img src="header.jpg" /></a>
@@ -80,7 +81,12 @@
 				<img src="2.jpg" /></a></p>
         </div>
     </div>
-
 </body>
+<!-- loader -->
+<script>
+    window.addEventListener('load', (e) => {
+        document.body.classList.add('loaded');
+    });
+</script>
 
 </html>

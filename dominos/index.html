@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <div class="border border-danger border-5 text-danger"><button type="button" onclick="window.close();" class="btn-close" aria-label="Close"></button>
         <table align="center" width="1200">
 
@@ -99,5 +100,11 @@
         </table>
     </div>
 </body>
+<!-- loader -->
+<script>
+    window.addEventListener('load', (e) => {
+        document.body.classList.add('loaded');
+    });
+</script>
 
 </html>

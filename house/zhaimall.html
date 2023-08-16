@@ -12,14 +12,15 @@
 </head>
 
 <body>
+    <div class="loader"></div>
     <div class="border border-danger border-5 bg-danger text-white"><button type="button" onclick="window.close();" class="btn-close btn-close-white" aria-label="Close"></button>
         <img src="images/huose.jpg" alt="" style="width: 100%;"></div>
-
-
-
-
-
-
 </body>
+<!-- loader -->
+<script>
+    window.addEventListener('load', (e) => {
+        document.body.classList.add('loaded');
+    });
+</script>
 
 </html>
