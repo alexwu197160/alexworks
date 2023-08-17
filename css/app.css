@@ -26,16 +26,9 @@ body {
     border: 5px solid #f00;
 }
 
-@media screen and(max-width: 1440px) {
-    .waterfall-item {
-        width: 170px;
-        margin: 0 10px 10px 0;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .waterfall-item {
-        width: 80%;
+        width: 86%;
         margin: 0 0 10px 25px;
     }
 }

@@ -1,194 +1,194 @@
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        
-        .body {
-            width: 100%;
-            margin: 0 auto;
-        }
-        
-        .waterfall-container {
-            margin: 0 auto;
-            display: flex;
-            flex-flow: row wrap;
-            width: 370px;
-        }
-        
-        .waterfall-item {
-            width: 200px;
-            margin: 0 10px 10px 0;
-        }
-        
-        .waterfall-item:hover {
-            -moz-transition: border-color 0.5s ease-in-out;
-            transition: border-color 0.1s ease-in-out;
-            border: 5px solid #f00;
-        }
-        
-        @media screen and (max-width: 768px) {
-            .waterfall-item {
-                width: 80%;
-                margin: 0 0 10px 25px;
+            body {
+                margin: 0;
+                padding: 0;
             }
-        }
-        
-        .waterfall-item.item-1 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-2 {
-            height: 420px;
-        }
-        
-        .waterfall-item.item-3 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-4 {
-            height: 180px;
-        }
-        
-        .waterfall-item.item-5 {
-            height: 110px;
-        }
-        
-        .waterfall-item.item-6 {
-            height: 130px;
-        }
-        
-        .waterfall-item.item-7 {
-            height: 280px;
-        }
-        
-        .waterfall-item.item-8 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-9 {
-            height: 130px;
-        }
-        
-        .waterfall-item.item-10 {
-            height: 110px;
-        }
-        
-        .waterfall-item.item-11 {
-            height: 120px;
-        }
-        
-        .waterfall-item.item-12 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-13 {
-            height: 110px;
-        }
-        
-        .waterfall-item.item-14 {
-            height: 120px;
-        }
-        
-        .waterfall-item.item-15 {
-            height: 130px;
-        }
-        
-        .waterfall-item.item-16 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-17 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-18 {
-            height: 130px;
-        }
-        
-        .waterfall-item.item-19 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-20 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-21 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-22 {
-            height: 120px;
-        }
-        
-        .waterfall-item.item-23 {
-            height: 130px;
-        }
-        
-        .waterfall-item.item-24 {
-            height: 130px;
-        }
-        
-        .waterfall-item.item-25 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-26 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-27 {
-            height: 130px;
-        }
-        
-        .waterfall-item.item-28 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-29 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-30 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-31 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-32 {
-            height: 140px;
-        }
-        
-        .waterfall-item.item-33 {
-            height: 380px;
-        }
-        
-        .waterfall-item.item-34 {
-            height: 380px;
-        }
-        
-        .waterfall-item.item-35 {
-            height: 380px;
-        }
-        
-        .waterfall-item.item-36 {
-            height: 130px;
-        }
-        
-        .waterfall-item.item-37 {
-            height: 380px;
-        }
-        
-        .waterfall-item.item-38 {
-            height: 340px;
-        }
-        
-        .waterfall-item.item-39 {
-            height: 110px;
-        }
-        
-        .waterfall-item.item-40 {
-            height: 130px;
-        }
+            
+            .body {
+                width: 100%;
+                margin: 0 auto;
+            }
+            
+            .waterfall-container {
+                margin: 0 auto;
+                display: flex;
+                flex-flow: row wrap;
+                width: 370px;
+            }
+            
+            .waterfall-item {
+                width: 200px;
+                margin: 0 10px 10px 0;
+            }
+            
+            .waterfall-item:hover {
+                -moz-transition: border-color 0.5s ease-in-out;
+                transition: border-color 0.1s ease-in-out;
+                border: 5px solid #f00;
+            }
+            
+            @media screen and (max-width: 768px) {
+                .waterfall-item {
+                    width: 86%;
+                    margin: 0 0 10px 25px;
+                }
+            }
+            
+            .waterfall-item.item-1 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-2 {
+                height: 420px;
+            }
+            
+            .waterfall-item.item-3 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-4 {
+                height: 180px;
+            }
+            
+            .waterfall-item.item-5 {
+                height: 110px;
+            }
+            
+            .waterfall-item.item-6 {
+                height: 130px;
+            }
+            
+            .waterfall-item.item-7 {
+                height: 280px;
+            }
+            
+            .waterfall-item.item-8 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-9 {
+                height: 130px;
+            }
+            
+            .waterfall-item.item-10 {
+                height: 110px;
+            }
+            
+            .waterfall-item.item-11 {
+                height: 120px;
+            }
+            
+            .waterfall-item.item-12 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-13 {
+                height: 110px;
+            }
+            
+            .waterfall-item.item-14 {
+                height: 120px;
+            }
+            
+            .waterfall-item.item-15 {
+                height: 130px;
+            }
+            
+            .waterfall-item.item-16 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-17 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-18 {
+                height: 130px;
+            }
+            
+            .waterfall-item.item-19 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-20 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-21 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-22 {
+                height: 120px;
+            }
+            
+            .waterfall-item.item-23 {
+                height: 130px;
+            }
+            
+            .waterfall-item.item-24 {
+                height: 130px;
+            }
+            
+            .waterfall-item.item-25 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-26 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-27 {
+                height: 130px;
+            }
+            
+            .waterfall-item.item-28 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-29 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-30 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-31 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-32 {
+                height: 140px;
+            }
+            
+            .waterfall-item.item-33 {
+                height: 380px;
+            }
+            
+            .waterfall-item.item-34 {
+                height: 380px;
+            }
+            
+            .waterfall-item.item-35 {
+                height: 380px;
+            }
+            
+            .waterfall-item.item-36 {
+                height: 130px;
+            }
+            
+            .waterfall-item.item-37 {
+                height: 380px;
+            }
+            
+            .waterfall-item.item-38 {
+                height: 340px;
+            }
+            
+            .waterfall-item.item-39 {
+                height: 110px;
+            }
+            
+            .waterfall-item.item-40 {
+                height: 130px;
+            }
