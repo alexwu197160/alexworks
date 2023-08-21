@@ -2,22 +2,16 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
     <link href="css/bootstrap.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="https://s1.pearlcdn.com/TW/contents/css/lib/owl.carousel.min.css">
     <title>Hello, Alex Works!</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/ad.css">
-    <link rel="stylesheet" href="js/macy.js">
 
 </head>
 
@@ -25,7 +19,7 @@
     <div id="top"></div>
     <div id="header"></div>
     <div class="loader"></div>
-    <nav aria-label="breadcrumb" class="border-top border-danger border-5 mybreadcrumb-t" id="a">
+    <nav aria-label="breadcrumb" class="border-top border-danger border-5 mybreadcrumb-t">
         <ol class="breadcrumb ms-2 pb-1">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item"><a href="allworks.html">Works Area</a></li>
@@ -49,7 +43,7 @@
                     <img class="waterfall-item item-7" src="images/ad/ban09.jpg"></img>
                     <img class="waterfall-item item-8" src="images/ad/ban100146.jpg"></img>
                     <img class="waterfall-item item-9" src="images/ad/ban10058-1.jpg"></img>
-                    <img class="waterfall-item item-10" src="images/ad/ban10058.jpg"></img>
+                    <!-- <img class="waterfall-item item-10" src="images/ad/ban10058.jpg"></img> -->
                     <img class="waterfall-item item-11" src="images/ad/ban1005888.jpg"></img>
                     <img class="waterfall-item item-12" src="images/ad/ban118.jpg"></img>
                     <img class="waterfall-item item-15" src="images/ad/ban12.jpg"></img>
@@ -133,15 +127,58 @@
             </div>
         </div>
     </div>
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
     <!-- loader -->
+    <style>
+        .loader {
+            border: 10px solid #fff;
+            border-radius: 50%;
+            border-top: 10px solid #f00;
+            width: 70px;
+            height: 70px;
+            -webkit-animation: spin 2s linear infinite;
+            /* Safari */
+            animation: spin 2s linear infinite;
+            position: absolute;
+            left: calc(50% - 35px);
+            top: calc(50% - 35px);
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        body :not(.loader) {
+            opacity: 0;
+        }
+        
+        body .loader {
+            display: block;
+        }
+        
+        body.loaded :not(.loader) {
+            opacity: 1;
+        }
+        
+        body.loaded .loader {
+            display: none;
+        }
+    </style>
     <script>
         window.addEventListener('load', (e) => {
             document.body.classList.add('loaded');
+        });
+    </script>
+    <script>
+        $(function() {
+            $("#header").load("layouts/header.html");
+            $("#footer").load("layouts/footer.html");
         });
     </script>
 
@@ -235,28 +272,6 @@
         }
     </script>
 
-    <script>
-        $(function() {
-            $("#header").load("layouts/header.html");
-            $("#footer").load("layouts/footer.html");
-        });
-        $(".custom-carousel").owlCarousel({
-            autoWidth: true,
-            loop: true
-        });
-        $(document).ready(function() {
-            $(".custom-carousel .item").click(function() {
-                $(".custom-carousel .item").not($(this)).removeClass("active");
-                $(this).toggleClass("active");
-            });
-        });
-    </script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js " integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js " integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF " crossorigin="anonymous "></script>
-    -->
 </body>
 
 </html>

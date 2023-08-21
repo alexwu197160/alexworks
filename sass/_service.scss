@@ -1,0 +1,30 @@
+ .list>.text {
+     display: none;
+ }
+ 
+ .controller {
+     color: $color-listGroupItemText;
+     display: block;
+     padding: 10px 10px 0 10px;
+     text-decoration: none;
+     border-bottom: 0.5px solid $color-breadcrumbActive;
+ }
+ 
+ .controller:hover {
+     color: $color-red;
+     background-color: $color-white;
+ }
+ 
+ .text1.x {
+     display: block;
+ }
+ 
+ .text2.x {
+     display: block;
+ }
+ 
+ .text {
+     color: $color-accordionText;
+     padding: 10px;
+     background-color: $color-white;
+ }

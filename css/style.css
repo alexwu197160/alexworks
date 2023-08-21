@@ -4,7 +4,7 @@
         /* loader */
         
         .loader {
-            border: 10px solid #f3f3f3;
+            border: 10px solid #fff;
             border-radius: 50%;
             border-top: 10px solid #f00;
             width: 70px;
@@ -165,15 +165,12 @@
         
         .list-group-item {
             border-color: rgba(255, 0, 0, .3);
+            color: #aaa;
         }
         
         .list-group-item:hover {
             color: #f00;
             background-color: rgba(0, 0, 0, 0);
-        }
-        
-        .list-group-item {
-            color: #aaa;
         }
         
         p {
@@ -217,7 +214,7 @@
         
         .accordion-button:not(.collapsed) {
             color: #970404;
-            background-color: #fbdddd;
+            background-color: #fff4f4;
             box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
         }
         

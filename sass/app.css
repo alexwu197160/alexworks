@@ -1,11 +1,30 @@
-.a {
-  width: 10rem;
-  height: 10rem;
-  background-color: blue;
+.list > .text {
+  display: none;
 }
 
-.b {
-  width: 10rem;
-  height: 10rem;
-  background-color: red;
+.controller {
+  color: #737373;
+  display: block;
+  padding: 10px 10px 0 10px;
+  text-decoration: none;
+  border-bottom: 0.5px solid #fabebe;
+}
+
+.controller:hover {
+  color: #f00;
+  background-color: #fff;
+}
+
+.text1.x {
+  display: block;
+}
+
+.text2.x {
+  display: block;
+}
+
+.text {
+  color: #970404;
+  padding: 10px;
+  background-color: #fff;
 }/*# sourceMappingURL=app.css.map */
