@@ -91,6 +91,10 @@ h4 {
     color: $color-white;
 }
 
+.breadcrumb-item>a:hover {
+    color: $color-navlink;
+}
+
 .mybreadcrumb-bg {
     background-image: url("../images/breadcrumb-bg-danger.png");
     background-repeat: no-repeat;

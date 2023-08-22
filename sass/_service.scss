@@ -28,3 +28,7 @@
      padding: 10px;
      background-color: $color-white;
  }
+ 
+ .list>a:hover {
+     color: $color-red !important;
+ }
