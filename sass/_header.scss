@@ -1,0 +1,135 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.navbar {
+    opacity: 1;
+    transition: 1s;
+}
+
+.navbar-brand>img {
+    width: 78px;
+    height: 30px;
+}
+
+.mybg-danger {
+    background-color: $color-red;
+}
+
+.dropdown-menu {
+    border: 1px solid $color-red;
+}
+
+.dropdown-item {
+    color: $color-red;
+    border: $color-red;
+}
+
+.dropdown-item:hover {
+    color: $color-white;
+    background-color: $color-red;
+}
+
+.mymr-0 {
+    margin-left: auto;
+}
+
+.mybtn-outline-danger {
+    border: 1px solid $color-white !important;
+    color: $color-white !important;
+}
+
+.mybtn-outline-danger:hover {
+    background-color: $color-navlink !important;
+    color: $color-red !important;
+}
+
+.my-img {
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.item>h6 {
+    padding-top: 6px;
+}
+
+.navbar-dark .navbar-toggler {
+    color: $color-lightGray;
+    border-color: $color-borderSolid;
+}
+
+
+/* topbanner */
+
+.carousel-indicators .active {
+    background-color: $color-red !important;
+    opacity: 1;
+}
+
+.fw-bold {
+    text-shadow: 0 0 3px $color-dark;
+}
+
+.breadcrumb-item.active {
+    color: $color-breadcrumbActive;
+}
+
+.breadcrumb-item>a {
+    text-decoration: none;
+    color: $color-white;
+}
+
+.mybreadcrumb-bg {
+    background-image: url("../images/breadcrumb-bg-danger.png");
+    background-repeat: no-repeat;
+}
+
+.mybreadcrumb-t {
+    background-image: url("../images/breadcrumb-bg-danger.png");
+    background-repeat: no-repeat;
+    margin-top: 57px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: $color-breadcrumbActive;
+}
+
+.mytitle {
+    margin-top: 0px;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: $color-red;
+    background-color: $color-listBg;
+    border-color: $color-borderline;
+}
+
+.list-group-item {
+    border-color: $color-borderline;
+    color: $color-listGroupItemText;
+}
+
+.list-group-item:hover {
+    color: $color-red;
+    background-color: $color-listBg;
+}
+
+p {
+    color: $color-grayText;
+}
+
+.btn-close {
+    opacity: 1;
+}
