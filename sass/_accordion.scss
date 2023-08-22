@@ -27,10 +27,14 @@
     z-index: 999;
 }
 
-* .btn_top a {
+* .btn_top>a {
     color: $color-white;
     display: block;
     text-align: center;
     font-size: 20px;
     text-decoration: none;
+}
+
+.btn_top>a:hover {
+    color: $color-navlink;
 }
