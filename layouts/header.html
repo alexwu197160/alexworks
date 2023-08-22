@@ -83,7 +83,7 @@
         position: absolute;
         height: 9px;
         width: 50%;
-        background: #d3531a;
+        background: #f00;
         opacity: 1;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -259,23 +259,18 @@
         border-color: rgba(255, 255, 255, 0);
     }
 </style>
-
 <navbar class="navbar navbar-expand-lg navbar-dark mybg-danger bg-gradient">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
             <img src="images/alexw-logo.png" alt="Bootstrap" width="78" height="30">
         </a>
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>                
-                    </button> -->
         <div class="navbar-toggler" type="button" id="nav-icon1" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <!-- mx-auto 置中 me-auto 預設靠左 -->
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
@@ -315,6 +310,8 @@
         </div>
     </div>
 </navbar>
+
+
 <script>
     let navbar = document.querySelector(".navbar");
 
