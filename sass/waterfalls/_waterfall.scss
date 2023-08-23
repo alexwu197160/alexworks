@@ -1,0 +1,17 @@
+   .waterfall-container {
+       margin: 0 auto;
+       display: flex;
+       flex-flow: row wrap;
+       width: 370px;
+   }
+   
+   .waterfall-item {
+       width: 200px;
+       margin: 0 10px 10px 0;
+   }
+   
+   .waterfall-item:hover {
+       -moz-transition: border-color 0.5s ease-in-out;
+       transition: border-color 0.1s ease-in-out;
+       border: 5px solid $color-red;
+   }

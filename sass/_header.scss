@@ -46,10 +46,12 @@ h4 {
 .mybtn-outline-danger {
     border: 1px solid $color-white !important;
     color: $color-white !important;
-     :hover {
-        background-color: $color-navlink !important;
-        color: $color-red !important;
-    }
+}
+
+.mybtn-outline-danger:hover {
+    background-color: $color-navlink !important;
+    color: $color-red !important;
+    border: 1px solid $color-red !important;
 }
 
 .my-img {
@@ -112,18 +114,17 @@ h4 {
 }
 
 .list-group-item {
-    border-color: $color-borderline;
     color: $color-listGroupItemText;
     .active {
         z-index: 2;
         color: $color-red;
-        background-color: $color-listBg;
         border-color: $color-borderline;
     }
-    :hover {
-        color: $color-red !important;
-        background-color: $color-listBg;
-    }
+}
+
+.list-group-item:hover {
+    color: $color-red;
+    background-color: $color-listBg;
 }
 
 p {
