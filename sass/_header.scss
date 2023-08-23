@@ -127,7 +127,7 @@ h4 {
 }
 
 .list-group-item:hover {
-    color: $color-red;
+    color: $color-red !important;
     background-color: $color-listBg;
 }
 

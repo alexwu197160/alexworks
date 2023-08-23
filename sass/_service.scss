@@ -1,5 +1,10 @@
- .list>.text {
-     display: none;
+ .list {
+     .text {
+         display: none;
+         a:hover {
+             color: $color-red !important;
+         }
+     }
  }
  
  .controller {
@@ -8,17 +13,13 @@
      padding: 10px 10px 0 10px;
      text-decoration: none;
      border-bottom: 0.5px solid $color-breadcrumbActive;
+      :hover {
+         color: $color-red;
+         background-color: $color-white;
+     }
  }
  
- .controller:hover {
-     color: $color-red;
-     background-color: $color-white;
- }
- 
- .text1.x {
-     display: block;
- }
- 
+ .text1.x,
  .text2.x {
      display: block;
  }
@@ -27,8 +28,4 @@
      color: $color-accordionText;
      padding: 10px;
      background-color: $color-white;
- }
- 
- .list>a:hover {
-     color: $color-red !important;
  }
