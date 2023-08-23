@@ -481,7 +481,7 @@ body.loaded .loader {
     height: 50px;
   }
   .list-group {
-    display: none;
+    display: none !important;
   }
   .d-md-block {
     display: block !important;
