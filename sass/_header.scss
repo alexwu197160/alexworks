@@ -115,17 +115,16 @@ h4 {
 }
 
 .list-group-item {
-    color: $color-listGroupItemText;
+    border-color: $color-borderline;
     .active {
         z-index: 2;
         color: $color-red;
-        border-color: $color-borderline;
     }
 }
 
 .list-group-item:hover {
     color: $color-red;
-    background-color: $color-listBg;
+    background-color: $color-listBg !important;
 }
 
 p {

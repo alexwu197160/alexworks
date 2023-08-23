@@ -390,17 +390,16 @@ h4 {
 }
 
 .list-group-item {
-  color: #737373;
+  border-color: rgba(255, 0, 0, 0.3);
 }
 .list-group-item .active {
   z-index: 2;
   color: #f00;
-  border-color: rgba(255, 0, 0, 0.3);
 }
 
 .list-group-item:hover {
   color: #f00;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 p {
