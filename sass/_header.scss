@@ -33,11 +33,10 @@ h4 {
 .dropdown-item {
     color: $color-red;
     border: $color-red;
-}
-
-.dropdown-item:hover {
-    color: $color-white;
-    background-color: $color-red;
+     :hover {
+        color: $color-white;
+        background-color: $color-red;
+    }
 }
 
 .mymr-0 {
@@ -47,11 +46,10 @@ h4 {
 .mybtn-outline-danger {
     border: 1px solid $color-white !important;
     color: $color-white !important;
-}
-
-.mybtn-outline-danger:hover {
-    background-color: $color-navlink !important;
-    color: $color-red !important;
+     :hover {
+        background-color: $color-navlink !important;
+        color: $color-red !important;
+    }
 }
 
 .my-img {
@@ -89,10 +87,9 @@ h4 {
 .breadcrumb-item>a {
     text-decoration: none;
     color: $color-white;
-}
-
-.breadcrumb-item>a:hover {
-    color: $color-navlink;
+     :hover {
+        color: $color-navlink;
+    }
 }
 
 .mybreadcrumb-bg {
@@ -114,21 +111,19 @@ h4 {
     margin-top: 0px;
 }
 
-.list-group-item.active {
-    z-index: 2;
-    color: $color-red;
-    background-color: $color-listBg;
-    border-color: $color-borderline;
-}
-
 .list-group-item {
     border-color: $color-borderline;
     color: $color-listGroupItemText;
-}
-
-.list-group-item:hover {
-    color: $color-red !important;
-    background-color: $color-listBg;
+    .active {
+        z-index: 2;
+        color: $color-red;
+        background-color: $color-listBg;
+        border-color: $color-borderline;
+    }
+    :hover {
+        color: $color-red !important;
+        background-color: $color-listBg;
+    }
 }
 
 p {
