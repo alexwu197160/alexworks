@@ -211,8 +211,13 @@
 .list .text {
   display: none;
 }
-.list .text a:hover {
+.list a:hover {
   color: #f00 !important;
+}
+
+ol,
+ul {
+  padding-left: 0rem !important;
 }
 
 .controller {
@@ -444,7 +449,7 @@ body :not(.loader) {
   opacity: 0;
 }
 
-body .loader {
+body.loader {
   display: block;
 }
 

@@ -1,10 +1,15 @@
  .list {
      .text {
          display: none;
-         a:hover {
-             color: $color-red !important;
-         }
      }
+     a:hover {
+         color: $color-red !important;
+     }
+ }
+ 
+ ol,
+ ul {
+     padding-left: 0rem !important;
  }
  
  .controller {
