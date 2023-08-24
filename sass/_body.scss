@@ -41,3 +41,19 @@
  body.loaded .loader {
      display: none;
  }
+ 
+ .list-group-item {
+     border-color: $color-borderline;
+     .active {
+         z-index: 2;
+         color: $color-red;
+     }
+ }
+ 
+ p {
+     color: $color-grayText;
+ }
+ 
+ .btn-close {
+     opacity: 1;
+ }

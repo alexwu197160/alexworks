@@ -113,24 +113,3 @@ h4 {
 .mytitle {
     margin-top: 0px;
 }
-
-.list-group-item {
-    border-color: $color-borderline;
-    .active {
-        z-index: 2;
-        color: $color-red;
-    }
-}
-
-.list-group-item:hover {
-    color: $color-red;
-    background-color: $color-listBg !important;
-}
-
-p {
-    color: $color-grayText;
-}
-
-.btn-close {
-    opacity: 1;
-}
