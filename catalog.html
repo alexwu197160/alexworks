@@ -13,9 +13,17 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="preloader">
+        <div class="preloader status">
+            <div status class="preloader status-text">I'm {{loaded}} % done!</div>
+            <div class="preloader status-loader">
+                <div loader :style="loadStyle" class="preloader status-bar"></div>
+            </div>
+        </div>
+    </div>
     <div id="top"></div>
     <div id="header"></div>
-    <div class="loader"></div>
     <nav aria-label="breadcrumb" class="border-top border-danger border-5 mybreadcrumb-t" id="a">
         <ol class="breadcrumb ms-2 pb-1">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -32,47 +40,47 @@
                 </div>
 
                 <div class="waterfall-container">
-                    <img class="waterfall-item item-1" src="images/dm/adcheneal-dm-1.jpg"></img>
-                    <img class="waterfall-item item-2" src="images/dm/ELA-confirmA4.jpg"></img>
-                    <img class="waterfall-item item-3" src="images/dm/formosa.jpg"></img>
-                    <a href="t5/index.html" target="_blank"><img class="waterfall-item item-4" src="images/dm/game-01.jpg"></img>
+                    <img class="waterfall-item item-1" src="./images/dm/adcheneal-dm-1.jpg"></img>
+                    <img class="waterfall-item item-2" src="./images/dm/ELA-confirmA4.jpg"></img>
+                    <img class="waterfall-item item-3" src="./images/dm/formosa.jpg"></img>
+                    <a href="t5/index.html" target="_blank"><img class="waterfall-item item-4" src="./images/dm/game-01.jpg"></img>
                     </a>
-                    <img class="waterfall-item item-5" src="images/dm/nars.jpg"></img>
-                    <img class="waterfall-item item-6" src="images/dm/adcheneal-dm-2.jpg"></img>
-                    <img class="waterfall-item item-7" src="images/dm/scBank.jpg"></img>
-                    <img class="waterfall-item item-8" src="images/dm/game-02.jpg"></img>
-                    <img class="waterfall-item item-9" src="images/dm/game-03.jpg"></img>
-                    <img class="waterfall-item item-10" src="images/dm/dms-01.jpg"></img>
-                    <img class="waterfall-item item-11" src="images/dm/dms-02.jpg"></img>
-                    <img class="waterfall-item item-12" src="images/dm/dms-03.jpg"></img>
-                    <img class="waterfall-item item-13" src="images/dm/dms-04.jpg"></img>
-                    <img class="waterfall-item item-14" src="images/dm/dms-05.jpg"></img>
-                    <img class="waterfall-item item-15" src="images/dm/dms-06.jpg"></img>
-                    <img class="waterfall-item item-16" src="images/dm/dms-07.jpg"></img>
-                    <img class="waterfall-item item-17" src="images/dm/dms-08.jpg"></img>
-                    <img class="waterfall-item item-18" src="images/dm/dms-09.jpg"></img>
-                    <img class="waterfall-item item-19" src="images/dm/dms-10.jpg"></img>
-                    <img class="waterfall-item item-20" src="images/dm/dms-11.jpg"></img>
-                    <img class="waterfall-item item-21" src="images/dm/dms-12.jpg"></img>
-                    <img class="waterfall-item item-22" src="images/dm/dms-13.jpg"></img>
-                    <img class="waterfall-item item-23" src="images/dm/dms-14.jpg"></img>
-                    <img class="waterfall-item item-24" src="images/dm/dms-15.jpg"></img>
-                    <img class="waterfall-item item-25" src="images/dm/dms-16.jpg"></img>
-                    <img class="waterfall-item item-26" src="images/dm/dms-17.jpg"></img>
-                    <img class="waterfall-item item-27" src="images/dm/dms-18.jpg"></img>
-                    <img class="waterfall-item item-28" src="images/dm/dms-19.jpg"></img>
-                    <img class="waterfall-item item-29" src="images/dm/dms-20.jpg"></img>
-                    <img class="waterfall-item item-30" src="images/dm/dms-21.jpg"></img>
-                    <img class="waterfall-item item-31" src="images/dm/dms-22.jpg"></img>
-                    <img class="waterfall-item item-32" src="images/dm/dms-23.jpg"></img>
-                    <img class="waterfall-item item-33" src="images/dm/dms-24.jpg"></img>
-                    <img class="waterfall-item item-34" src="images/dm/dms-25.jpg"></img>
-                    <img class="waterfall-item item-35" src="images/dm/dms-26.jpg"></img>
-                    <img class="waterfall-item item-36" src="images/dm/dms-27.jpg"></img>
-                    <img class="waterfall-item item-37" src="images/dm/dms-28.jpg"></img>
-                    <img class="waterfall-item item-38" src="images/dm/dms-29.jpg"></img>
-                    <img class="waterfall-item item-39" src="images/dm/dms-30.jpg"></img>
-                    <img class="waterfall-item item-40" src="images/dm/dms-31.jpg"></img>
+                    <img class="waterfall-item item-5" src="./images/dm/nars.jpg"></img>
+                    <img class="waterfall-item item-6" src="./images/dm/adcheneal-dm-2.jpg"></img>
+                    <img class="waterfall-item item-7" src="./images/dm/scBank.jpg"></img>
+                    <img class="waterfall-item item-8" src="./images/dm/game-02.jpg"></img>
+                    <img class="waterfall-item item-9" src="./images/dm/game-03.jpg"></img>
+                    <img class="waterfall-item item-10" src="./images/dm/dms-01.jpg"></img>
+                    <img class="waterfall-item item-11" src="./images/dm/dms-02.jpg"></img>
+                    <img class="waterfall-item item-12" src="./images/dm/dms-03.jpg"></img>
+                    <img class="waterfall-item item-13" src="./images/dm/dms-04.jpg"></img>
+                    <img class="waterfall-item item-14" src="./images/dm/dms-05.jpg"></img>
+                    <img class="waterfall-item item-15" src="./images/dm/dms-06.jpg"></img>
+                    <img class="waterfall-item item-16" src="./images/dm/dms-07.jpg"></img>
+                    <img class="waterfall-item item-17" src="./images/dm/dms-08.jpg"></img>
+                    <img class="waterfall-item item-18" src="./images/dm/dms-09.jpg"></img>
+                    <img class="waterfall-item item-19" src="./images/dm/dms-10.jpg"></img>
+                    <img class="waterfall-item item-20" src="./images/dm/dms-11.jpg"></img>
+                    <img class="waterfall-item item-21" src="./images/dm/dms-12.jpg"></img>
+                    <img class="waterfall-item item-22" src="./images/dm/dms-13.jpg"></img>
+                    <img class="waterfall-item item-23" src="./images/dm/dms-14.jpg"></img>
+                    <img class="waterfall-item item-24" src="./images/dm/dms-15.jpg"></img>
+                    <img class="waterfall-item item-25" src="./images/dm/dms-16.jpg"></img>
+                    <img class="waterfall-item item-26" src="./images/dm/dms-17.jpg"></img>
+                    <img class="waterfall-item item-27" src="./images/dm/dms-18.jpg"></img>
+                    <img class="waterfall-item item-28" src="./images/dm/dms-19.jpg"></img>
+                    <img class="waterfall-item item-29" src="./images/dm/dms-20.jpg"></img>
+                    <img class="waterfall-item item-30" src="./images/dm/dms-21.jpg"></img>
+                    <img class="waterfall-item item-31" src="./images/dm/dms-22.jpg"></img>
+                    <img class="waterfall-item item-32" src="./images/dm/dms-23.jpg"></img>
+                    <img class="waterfall-item item-33" src="./images/dm/dms-24.jpg"></img>
+                    <img class="waterfall-item item-34" src="./images/dm/dms-25.jpg"></img>
+                    <img class="waterfall-item item-35" src="./images/dm/dms-26.jpg"></img>
+                    <img class="waterfall-item item-36" src="./images/dm/dms-27.jpg"></img>
+                    <img class="waterfall-item item-37" src="./images/dm/dms-28.jpg"></img>
+                    <img class="waterfall-item item-38" src="./images/dm/dms-29.jpg"></img>
+                    <img class="waterfall-item item-39" src="./images/dm/dms-30.jpg"></img>
+                    <img class="waterfall-item item-40" src="./images/dm/dms-31.jpg"></img>
                 </div>
             </div>
         </div>
@@ -103,15 +111,80 @@
     <script src="https://s1.pearlcdn.com/TW/contents/js/lib/owl.carousel.min.js"></script>
     <script src="./js/jquery3.7.js"></script>
     <!-- loader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
     <script>
-        window.addEventListener('load', (e) => {
-            document.body.classList.add('loaded');
-        });
+        const vue = new Vue({
+            el: '.preloader',
+            data: {
+                loaded: 0,
+                loading: null,
+                loadStyle: {
+                    width: '0%'
+                },
+                statusElem: $('[status]'),
+                loader: $('[loader]'),
+                body: $('body')
+            },
+            ready() {
+                this.preloader = $(this.$el);
+                this.removeScrolling();
+                this.startLoading();
+            },
+            watch: {
+                loaded() {
+                    this.loadStyle.width = `${this.loaded}%`;
+                }
+            },
+            methods: {
+                removeScrolling() {
+                    this.body.css('overflow', 'hidden');
+                },
+                startLoading() {
+                    this.loading = setInterval(this.load, 20);
+                },
+                load() {
+                    this.loaded < 100 ? this.loaded++ : this.doneLoading();
+                },
+                doneLoading() {
+                    clearInterval(this.loading);
+                    this.updateStatus();
+                },
+                updateStatus() {
+                    this.statusElem.text('Lets get crazay !');
+                    this.loader.fadeOut();
+                    this.animatePreloader();
+                },
+                animatePreloader() {
+                    let app = this,
+                        height = this.preloader.height(),
+                        properties = {
+                            'margin-top': `-${height}`
+                        },
+                        options = {
+                            duration: 1000,
+                            easing: 'swing',
+                            complete() {
+                                app.removePreloader()
+                            }
+                        };
+                    this.preloader.delay(500).animate(properties, options)
+                },
+                removePreloader() {
+                    this.preloader.remove();
+                    this.body.removeAttr('style');
+                    this.animateWebsite();
+                },
+                animateWebsite() {
+                    console.log('lets get pretty');
+                }
+            }
+        })
     </script>
     <script>
         $(function() {
-            $("#header").load("layouts/header.html");
-            $("#footer").load("layouts/footer.html");
+            $("#header").load("./layouts/header.html");
+            $("#footer").load("./layouts/footer.html");
         });
     </script>
     <script>

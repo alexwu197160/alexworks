@@ -10,9 +10,17 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="preloader">
+        <div class="preloader status">
+            <div status class="preloader status-text">I'm {{loaded}} % done!</div>
+            <div class="preloader status-loader">
+                <div loader :style="loadStyle" class="preloader status-bar"></div>
+            </div>
+        </div>
+    </div>
     <div id="top"></div>
     <div id="header"></div>
-    <div class="loader"></div>
     <nav aria-label="breadcrumb" class="border-top border-danger border-5 mybreadcrumb-t" id="a">
         <ol class="breadcrumb ms-2 pb-1">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -48,7 +56,7 @@
                         <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/ps.png.png" alt="">
+                                    <img src="./images/icons/ps.png.png" alt="">
                                     <div class="card-body">
                                         <h6>Photoshop</h6>
                                         <p>影像處理軟體</p>
@@ -57,7 +65,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/ai.png.png" alt="">
+                                    <img src="./images/icons/ai.png.png" alt="">
                                     <div class="card-body">
                                         <h6>Illustrator</h6>
                                         <p>向量的圖形製作</p>
@@ -66,7 +74,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/figma.png.png" alt="">
+                                    <img src="./images/icons/figma.png.png" alt="">
                                     <div class="card-body">
                                         <h6>Figma</h6>
                                         <p>向量圖形編輯原型設計</p>
@@ -75,7 +83,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/sketch.png" alt="">
+                                    <img src="./images/icons/sketch.png" alt="">
                                     <div class="card-body">
                                         <h6>Sketch</h6>
                                         <p>macOS專用矢量圖形編輯器</p>
@@ -84,7 +92,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/pr.png" alt="">
+                                    <img src="./images/icons/pr.png" alt="">
                                     <div class="card-body">
                                         <h6>Premiere</h6>
                                         <p>非線性剪輯系統處理數位影片剪作</p>
@@ -93,7 +101,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/xd.png" alt="">
+                                    <img src="./images/icons/xd.png" alt="">
                                     <div class="card-body">
                                         <h6>XD</h6>
                                         <p>向量繪圖設計網站線框圖Wireframe設計</p>
@@ -102,7 +110,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/ae.png.png" alt="">
+                                    <img src="./images/icons/ae.png.png" alt="">
                                     <div class="card-body">
                                         <h6>After Effects</h6>
                                         <p>影片製作軟體用於2D和3D合成、動畫製作和視覺特效</p>
@@ -111,7 +119,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/vscode.png" alt="">
+                                    <img src="./images/icons/vscode.png" alt="">
                                     <div class="card-body">
                                         <h6>Visual Studio Code</h6>
                                         <p>跨平台免費原始碼編輯器</p>
@@ -120,7 +128,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/html.png" alt="">
+                                    <img src="./images/icons/html.png" alt="">
                                     <div class="card-body">
                                         <h6>HTML</h6>
                                         <p>建網頁的超文本標記語言</p>
@@ -129,7 +137,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/css.png" alt="">
+                                    <img src="./images/icons/css.png" alt="">
                                     <div class="card-body">
                                         <h6>CSS</h6>
                                         <p>階層式樣式表為結構化文件添加樣式的電腦語言</p>
@@ -138,7 +146,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/js.png" alt="">
+                                    <img src="./images/icons/js.png" alt="">
                                     <div class="card-body">
                                         <h6>JS</h6>
                                         <p>JavaScript原型和頭等函數多範式進階直譯程式語言</p>
@@ -147,7 +155,7 @@
                             </div>
                             <div class="col-4 col-md-3 col-lg-2 p-0">
                                 <div class="card text-center border-white">
-                                    <img src="images/icons/bootstrap.png" alt="">
+                                    <img src="./images/icons/bootstrap.png" alt="">
                                     <div class="card-body">
                                         <h6>Bootstrap</h6>
                                         <p>網站應用程式開發的開源前端</p>
@@ -156,7 +164,7 @@
                             </div>
                             <!-- <div class="col-4 col-md-3 col-lg-2 p-0">
                         <div class="card text-center border-white">
-                            <img src="images/icons/id.png" alt="">
+                            <img src="./images/icons/id.png" alt="">
                             <div class="card-body">
                                 <h5>InDesign</h5>
                                 <p>各種印刷品的排版編輯</p>
@@ -215,16 +223,81 @@
         })
     </script>
     <!-- loader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
     <script>
-        window.addEventListener('load', (e) => {
-            document.body.classList.add('loaded');
-        });
+        const vue = new Vue({
+            el: '.preloader',
+            data: {
+                loaded: 0,
+                loading: null,
+                loadStyle: {
+                    width: '0%'
+                },
+                statusElem: $('[status]'),
+                loader: $('[loader]'),
+                body: $('body')
+            },
+            ready() {
+                this.preloader = $(this.$el);
+                this.removeScrolling();
+                this.startLoading();
+            },
+            watch: {
+                loaded() {
+                    this.loadStyle.width = `${this.loaded}%`;
+                }
+            },
+            methods: {
+                removeScrolling() {
+                    this.body.css('overflow', 'hidden');
+                },
+                startLoading() {
+                    this.loading = setInterval(this.load, 20);
+                },
+                load() {
+                    this.loaded < 100 ? this.loaded++ : this.doneLoading();
+                },
+                doneLoading() {
+                    clearInterval(this.loading);
+                    this.updateStatus();
+                },
+                updateStatus() {
+                    this.statusElem.text('Lets get crazay !');
+                    this.loader.fadeOut();
+                    this.animatePreloader();
+                },
+                animatePreloader() {
+                    let app = this,
+                        height = this.preloader.height(),
+                        properties = {
+                            'margin-top': `-${height}`
+                        },
+                        options = {
+                            duration: 1000,
+                            easing: 'swing',
+                            complete() {
+                                app.removePreloader()
+                            }
+                        };
+                    this.preloader.delay(500).animate(properties, options)
+                },
+                removePreloader() {
+                    this.preloader.remove();
+                    this.body.removeAttr('style');
+                    this.animateWebsite();
+                },
+                animateWebsite() {
+                    console.log('lets get pretty');
+                }
+            }
+        })
     </script>
 
     <script>
         $(function() {
-            $("#header").load("layouts/header.html");
-            $("#footer").load("layouts/footer.html");
+            $("#header").load("./layouts/header.html");
+            $("#footer").load("./layouts/footer.html");
         });
         $(".custom-carousel").owlCarousel({
             autoWidth: true,

@@ -11,9 +11,17 @@
 </head>
 
 <body>
+    <!-- loader -->
+    <div class="preloader">
+        <div class="preloader status">
+            <div status class="preloader status-text">I'm {{loaded}} % done!</div>
+            <div class="preloader status-loader">
+                <div loader :style="loadStyle" class="preloader status-bar"></div>
+            </div>
+        </div>
+    </div>
     <div id="top"></div>
     <div id="header"></div>
-    <div class="loader"></div>
     <nav aria-label="breadcrumb" class="border-top border-danger border-5 mybreadcrumb-t" id="a">
         <ol class="breadcrumb ms-2 pb-1">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -30,46 +38,46 @@
                 </div>
 
                 <div class="waterfall-container">
-                    <img class="waterfall-item item-1" src="images/app/6dgaming.jpg"></img>
-                    <img class="waterfall-item item-2" src="images/app/k8/all-app.jpg"></img>
-                    <img class="waterfall-item item-3" src="images/app/6t/6T_betindex-1.jpg"></img>
-                    <a href="house/zhaimall.html" target="_blank"><img class="waterfall-item item-4" src="images/app/indexV.4-1H5.png "></img>
+                    <img class="waterfall-item item-1" src="./images/app/6dgaming.jpg"></img>
+                    <img class="waterfall-item item-2" src="./images/app/k8/all-app.jpg"></img>
+                    <img class="waterfall-item item-3" src="./images/app/6t/6T_betindex-1.jpg"></img>
+                    <a href="house/zhaimall.html" target="_blank"><img class="waterfall-item item-4" src="./images/app/indexV.4-1H5.png "></img>
                     </a>
-                    <img class="waterfall-item item-5" src="images/app/6t/6T_betindex-2.jpg"></img>
-                    <img class="waterfall-item item-12" src="images/app/iTRYapp.jpg"></img>
-                    <img class="waterfall-item item-7" src="images/app/yong-sheng-app.jpg"></img>
-                    <img class="waterfall-item item-6" src="images/app/ShinKong.jpg"></img>
-                    <img class="waterfall-item item-17" src="images/app/k8/k8-login.jpg"></img>
-                    <img class="waterfall-item item-8" src="images/app/ShinKongRWD.jpg"></img>
-                    <img class="waterfall-item item-9" src="images/app/k8/all-app-2.jpg"></img>
-                    <img class="waterfall-item item-10" src="images/app/6t/6T_betindex-ADdown.jpg"></img>
-                    <img class="waterfall-item item-11" src="images/app/k8/k8-bet.jpg"></img>
-                    <img class="waterfall-item item-13" src="images/app/6t/6T_index0819.jpg"></img>
-                    <img class="waterfall-item item-14" src="images/app/ShinKonglist.jpg"></img>
-                    <img class="waterfall-item item-15" src="images/app/ShinKongapp.jpg"></img>
-                    <img class="waterfall-item item-16" src="images/app/k8/k8-index.jpg"></img>
-                    <img class="waterfall-item item-18" src="images/app/ui-02.jpg"></img>
-                    <img class="waterfall-item item-19" src="images/app/ui-03.jpg"></img>
-                    <img class="waterfall-item item-20" src="images/app/ui-04.jpg"></img>
-                    <img class="waterfall-item item-21" src="images/app/ui-05.jpg"></img>
-                    <img class="waterfall-item item-22" src="images/app/ui-06.jpg"></img>
-                    <img class="waterfall-item item-23" src="images/app/ui-07.jpg"></img>
-                    <img class="waterfall-item item-24" src="images/app/ui-08.jpg"></img>
-                    <img class="waterfall-item item-25" src="images/app/ui-09.jpg"></img>
-                    <img class="waterfall-item item-26" src="images/app/ui-10.jpg"></img>
-                    <img class="waterfall-item item-27" src="images/app/ui-11.jpg"></img>
-                    <img class="waterfall-item item-28" src="images/app/ui-12.jpg"></img>
-                    <img class="waterfall-item item-29" src="images/app/ui-13.jpg"></img>
-                    <img class="waterfall-item item-30" src="images/app/ui-14.jpg"></img>
-                    <img class="waterfall-item item-31" src="images/app/ui-15.jpg"></img>
-                    <img class="waterfall-item item-32" src="images/app/ui-16.jpg"></img>
-                    <img class="waterfall-item item-33" src="images/app/ui-17.jpg"></img>
-                    <img class="waterfall-item item-34" src="images/app/ui-18.jpg"></img>
-                    <img class="waterfall-item item-35" src="images/app/ui-19.jpg"></img>
-                    <img class="waterfall-item item-36" src="images/app/ui-20.jpg"></img>
-                    <img class="waterfall-item item-37" src="images/app/ui-21.jpg"></img>
-                    <img class="waterfall-item item-38" src="images/app/ui-01.jpg"></img>
-                    <a href="https://xd.adobe.com/view/7e1ceb7d-513d-422d-4536-92396b093cb6-082d/screen/4235e5af-c5ef-4cc5-858d-d549dd9da7f3/" target="_blank"><img class="waterfall-item item-39" src="images/app/restaurant-app.jpg"></img>
+                    <img class="waterfall-item item-5" src="./images/app/6t/6T_betindex-2.jpg"></img>
+                    <img class="waterfall-item item-12" src="./images/app/iTRYapp.jpg"></img>
+                    <img class="waterfall-item item-7" src="./images/app/yong-sheng-app.jpg"></img>
+                    <img class="waterfall-item item-6" src="./images/app/ShinKong.jpg"></img>
+                    <img class="waterfall-item item-17" src="./images/app/k8/k8-login.jpg"></img>
+                    <img class="waterfall-item item-8" src="./images/app/ShinKongRWD.jpg"></img>
+                    <img class="waterfall-item item-9" src="./images/app/k8/all-app-2.jpg"></img>
+                    <img class="waterfall-item item-10" src="./images/app/6t/6T_betindex-ADdown.jpg"></img>
+                    <img class="waterfall-item item-11" src="./images/app/k8/k8-bet.jpg"></img>
+                    <img class="waterfall-item item-13" src="./images/app/6t/6T_index0819.jpg"></img>
+                    <img class="waterfall-item item-14" src="./images/app/ShinKonglist.jpg"></img>
+                    <img class="waterfall-item item-15" src="./images/app/ShinKongapp.jpg"></img>
+                    <img class="waterfall-item item-16" src="./images/app/k8/k8-index.jpg"></img>
+                    <img class="waterfall-item item-18" src="./images/app/ui-02.jpg"></img>
+                    <img class="waterfall-item item-19" src="./images/app/ui-03.jpg"></img>
+                    <img class="waterfall-item item-20" src="./images/app/ui-04.jpg"></img>
+                    <img class="waterfall-item item-21" src="./images/app/ui-05.jpg"></img>
+                    <img class="waterfall-item item-22" src="./images/app/ui-06.jpg"></img>
+                    <img class="waterfall-item item-23" src="./images/app/ui-07.jpg"></img>
+                    <img class="waterfall-item item-24" src="./images/app/ui-08.jpg"></img>
+                    <img class="waterfall-item item-25" src="./images/app/ui-09.jpg"></img>
+                    <img class="waterfall-item item-26" src="./images/app/ui-10.jpg"></img>
+                    <img class="waterfall-item item-27" src="./images/app/ui-11.jpg"></img>
+                    <img class="waterfall-item item-28" src="./images/app/ui-12.jpg"></img>
+                    <img class="waterfall-item item-29" src="./images/app/ui-13.jpg"></img>
+                    <img class="waterfall-item item-30" src="./images/app/ui-14.jpg"></img>
+                    <img class="waterfall-item item-31" src="./images/app/ui-15.jpg"></img>
+                    <img class="waterfall-item item-32" src="./images/app/ui-16.jpg"></img>
+                    <img class="waterfall-item item-33" src="./images/app/ui-17.jpg"></img>
+                    <img class="waterfall-item item-34" src="./images/app/ui-18.jpg"></img>
+                    <img class="waterfall-item item-35" src="./images/app/ui-19.jpg"></img>
+                    <img class="waterfall-item item-36" src="./images/app/ui-20.jpg"></img>
+                    <img class="waterfall-item item-37" src="./images/app/ui-21.jpg"></img>
+                    <img class="waterfall-item item-38" src="./images/app/ui-01.jpg"></img>
+                    <a href="https://xd.adobe.com/view/7e1ceb7d-513d-422d-4536-92396b093cb6-082d/screen/4235e5af-c5ef-4cc5-858d-d549dd9da7f3/" target="_blank"><img class="waterfall-item item-39" src="./images/app/restaurant-app.jpg"></img>
                     </a>
                 </div>
             </div>
@@ -101,15 +109,81 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="./js/jquery3.7.js"></script>
     <!-- loader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
     <script>
-        window.addEventListener('load', (e) => {
-            document.body.classList.add('loaded');
-        });
+        const vue = new Vue({
+            el: '.preloader',
+            data: {
+                loaded: 0,
+                loading: null,
+                loadStyle: {
+                    width: '0%'
+                },
+                statusElem: $('[status]'),
+                loader: $('[loader]'),
+                body: $('body')
+            },
+            ready() {
+                this.preloader = $(this.$el);
+                this.removeScrolling();
+                this.startLoading();
+            },
+            watch: {
+                loaded() {
+                    this.loadStyle.width = `${this.loaded}%`;
+                }
+            },
+            methods: {
+                removeScrolling() {
+                    this.body.css('overflow', 'hidden');
+                },
+                startLoading() {
+                    this.loading = setInterval(this.load, 20);
+                },
+                load() {
+                    this.loaded < 100 ? this.loaded++ : this.doneLoading();
+                },
+                doneLoading() {
+                    clearInterval(this.loading);
+                    this.updateStatus();
+                },
+                updateStatus() {
+                    this.statusElem.text('Lets get crazay !');
+                    this.loader.fadeOut();
+                    this.animatePreloader();
+                },
+                animatePreloader() {
+                    let app = this,
+                        height = this.preloader.height(),
+                        properties = {
+                            'margin-top': `-${height}`
+                        },
+                        options = {
+                            duration: 1000,
+                            easing: 'swing',
+                            complete() {
+                                app.removePreloader()
+                            }
+                        };
+                    this.preloader.delay(500).animate(properties, options)
+                },
+                removePreloader() {
+                    this.preloader.remove();
+                    this.body.removeAttr('style');
+                    this.animateWebsite();
+                },
+                animateWebsite() {
+                    console.log('lets get pretty');
+                }
+            }
+        })
     </script>
+
     <script>
         $(function() {
-            $("#header").load("layouts/header.html");
-            $("#footer").load("layouts/footer.html");
+            $("#header").load("./layouts/header.html");
+            $("#footer").load("./layouts/footer.html");
         });
     </script>
 

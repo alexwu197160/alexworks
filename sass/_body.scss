@@ -3,20 +3,6 @@
      font-size: 16px;
  }
  
- .loader {
-     border: 10px solid $color-accordionShadow;
-     border-radius: 50%;
-     border-top: 10px solid $color-red;
-     width: 70px;
-     height: 70px;
-     -webkit-animation: spin 2s linear infinite;
-     /* Safari */
-     animation: spin 2s linear infinite;
-     position: absolute;
-     left: calc(50% - 35px);
-     top: calc(50% - 35px);
- }
- 
  @keyframes spin {
      0% {
          transform: rotate(0deg);
@@ -26,20 +12,8 @@
      }
  }
  
- body :not(.loader) {
-     opacity: 0;
- }
- 
- body.loader {
-     display: block;
- }
- 
- body.loaded :not(.loader) {
-     opacity: 1;
- }
- 
- body.loaded .loader {
-     display: none;
+ body.modal-open {
+     padding-right: 0 !important;
  }
  
  .list-group-item {

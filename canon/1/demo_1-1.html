@@ -30,16 +30,20 @@
         body {
             background-image: url(images/bg_1_01.jpg);
         }
+        
+        img {
+            max-width: 1200px !important;
+        }
     </style>
 </head>
 
 <body>
-    <div class="loader"></div>
+
     <div class="border border-danger border-5 text-white"><button type="button" onclick="window.close();" class="btn-close btn-close-danger" aria-label="Close"></button>
         <table class="m-auto" width="200" cellpadding="0" cellspacing="0">
             <tr>
                 <td>
-                    <a href="demo_2-1.html"><img src="images/index_1-1_02.jpg" width="960" height="680"></a>
+                    <a href="demo_2-1.html"><img src="images/index_1-1_02.jpg" width="960" height="650"></a>
                 </td>
             </tr>
             <tr>
@@ -48,11 +52,6 @@
         </table>
     </div>
 </body>
-<!-- loader -->
-<script>
-    window.addEventListener('load', (e) => {
-        document.body.classList.add('loaded');
-    });
-</script>
+
 
 </html>
