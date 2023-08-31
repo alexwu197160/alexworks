@@ -16,6 +16,18 @@
      padding-right: 0 !important;
  }
  
+ //  body :not(.loader) {
+ //      opacity: 0;
+ //  }
+ //  body.loader {
+ //      display: block;
+ //  }
+ //  body.loaded :not(.loader) {
+ //      opacity: 1;
+ //  }
+ //  body.loaded .loader {
+ //      display: none;
+ //  }
  .list-group-item {
      border-color: $color-borderline;
      .active {
