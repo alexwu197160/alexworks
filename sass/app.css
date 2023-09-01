@@ -459,10 +459,6 @@ body.modal-open {
     padding-right: 0 !important;
 }
 
-.d-none {
-    display: block !important;
-}
-
 .list-group-item {
     border-color: rgba(255, 0, 0, 0.3);
 }

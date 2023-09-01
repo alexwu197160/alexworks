@@ -6947,7 +6947,7 @@ fieldset:disabled .btn {
 }
 
 .d-none {
-    display: none !important;
+    /* display: none !important; */
 }
 
 .shadow {
