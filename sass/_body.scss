@@ -18,29 +18,32 @@
      
      .d-none {
          display: block !important;
-         //  body :not(.loader) {
-         //      opacity: 0;
-         //  }
-         //  body.loader {
-         //      display: block;
-         //  }
-         //  body.loaded :not(.loader) {
-         //      opacity: 1;
-         //  }
-         //  body.loaded .loader {
-         //      display: none;
-         //  }
-         .list-group-item {
-             border-color: $color-borderline;
-             .active {
-                 z-index: 2;
-                 color: $color-red;
-             }
+     }
+     
+     //  body :not(.loader) {
+     //      opacity: 0;
+     //  }
+     //  body.loader {
+     //      display: block;
+     //  }
+     //  body.loaded :not(.loader) {
+     //      opacity: 1;
+     //  }
+     //  body.loaded .loader {
+     //      display: none;
+     //  }
+     .list-group-item {
+         border-color: $color-borderline;
+         .active {
+             z-index: 2;
+             color: $color-red;
          }
-         p {
-             color: $color-grayText;
-         }
-         .btn-close {
-             opacity: 1;
-         }
+     }
+     
+     p {
+         color: $color-grayText;
+     }
+     
+     .btn-close {
+         opacity: 1;
      }
