@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./sass/app.css">
     <link type="text/css" rel="stylesheet" href="https://s1.pearlcdn.com/TW/contents/css/lib/owl.carousel.min.css">
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <title>Hello, Alex Works!!!!</title>
 </head>
 
@@ -31,7 +32,7 @@
     <div id="top"></div>
     <div id="header"></div>
     <!-- topbanner-start -->
-    <div id="carouselExampleCaptions" class="carousel slide w-100 mt-5" data-bs-ride="carousel">
+    <div id="container" ; id="carouselExampleCaptions" class="carousel slide w-100 mt-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -706,6 +707,35 @@
                 $(this).toggleClass("active");
             });
         });
+    </script>
+    <script>
+        $('#container').imagesLoaded(function() {
+            // images have loaded
+        });
+
+        // options
+        $('#container').imagesLoaded({
+                // options...
+            },
+            function() {
+                // images have loaded
+            }
+        );
+
+        $('#container').imagesLoaded()
+            .always(function(instance) {
+                console.log('all images loaded');
+            })
+            .done(function(instance) {
+                console.log('all images successfully loaded');
+            })
+            .fail(function() {
+                console.log('all images loaded, at least one is broken');
+            })
+            .progress(function(instance, image) {
+                var result = image.isLoaded ? 'loaded' : 'broken';
+                console.log('image is ' + result + ' for ' + image.img.src);
+            });
     </script>
     <!-- loader -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
