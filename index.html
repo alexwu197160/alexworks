@@ -23,7 +23,7 @@
     <!-- loader -->
     <div class="preloader">
         <div class="preloader status">
-            <div status class="preloader status-text">I'm {{loaded}} % done!</div>
+            <div status class="preloader status-text">You are {{loaded}} % done!</div>
             <div class="preloader status-loader">
                 <div loader :style="loadStyle" class="preloader status-bar"></div>
             </div>
@@ -54,6 +54,7 @@
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17" aria-label="Slide 18"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="18" aria-label="Slide 19"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="19" aria-label="Slide 20"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="20" aria-label="Slide 21"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -196,6 +197,13 @@
                     <h7>全球最火爆棋牌包網，最強原生APP</h7>
                 </div>
             </div>
+            <div class="carousel-item">
+                <a href="https://hctong.com.tw/%e5%8f%b0%e7%81%a3%e5%94%af%e4%b8%80%e7%a4%be%e5%8d%80%e9%80%9a%e8%b7%af%e9%9b%bb%e5%95%86%e5%b9%b3%e5%8f%b0/" target="_blank"><img src="./images/ban/works-banner-21.jpg" class="d-block w-100" alt="..."></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="fs-1 fw-bold">Community e-commerce</h5>
+                    <h7>台灣唯一社區通路電商平台</h7>
+                </div>
+            </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -238,7 +246,7 @@
 
                 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4">
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/ps.png.png" alt="...">
                             <div class="card-body">
                                 <h6>Photoshop</h6>
@@ -247,7 +255,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/ai.png.png" alt="">
                             <div class="card-body">
                                 <h6>Illustrator</h6>
@@ -256,7 +264,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/figma.png.png" alt="">
                             <div class="card-body">
                                 <h6>Figma</h6>
@@ -265,7 +273,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/sketch.png" alt="">
                             <div class="card-body">
                                 <h6>Sketch</h6>
@@ -274,7 +282,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/pr.png" alt="">
                             <div class="card-body">
                                 <h6>Premiere</h6>
@@ -283,7 +291,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/xd.png" alt="">
                             <div class="card-body">
                                 <h6>XD</h6>
@@ -292,7 +300,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/ae.png.png" alt="">
                             <div class="card-body">
                                 <h6>After Effects</h6>
@@ -301,7 +309,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/vscode.png" alt="">
                             <div class="card-body">
                                 <h6>VSCode</h6>
@@ -310,7 +318,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/html.png" alt="">
                             <div class="card-body">
                                 <h6>HTML</h6>
@@ -319,7 +327,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/css.png" alt="">
                             <div class="card-body">
                                 <h6>CSS</h6>
@@ -328,7 +336,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/js.png" alt="">
                             <div class="card-body">
                                 <h6>JS</h6>
@@ -337,7 +345,7 @@
                         </div>
                     </div>
                     <div class="col-4 col-md-3 col-lg-2 p-0">
-                        <div class="card text-center border-white">
+                        <div class="card text-center border-white iconMoving">
                             <img src="images/icons/bootstrap.png" alt="">
                             <div class="card-body">
                                 <h6>Bootstrap</h6>
@@ -708,7 +716,7 @@
             });
         });
     </script>
-    <script>
+    <!-- <script>
         $('#container').imagesLoaded(function() {
             // images have loaded
         });
@@ -736,7 +744,7 @@
                 var result = image.isLoaded ? 'loaded' : 'broken';
                 console.log('image is ' + result + ' for ' + image.img.src);
             });
-    </script>
+    </script> -->
     <!-- loader -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
