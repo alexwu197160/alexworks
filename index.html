@@ -377,7 +377,7 @@
                 <h3 Class="border-start border-5 border-danger px-3 my-5">工作經歷</h3>
             </div>
 
-            <div class="accordion accordion-flush" id="accordionExample">
+            <div class="accordion accordion-flush resumeList" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingZero">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
@@ -487,7 +487,7 @@
     <!-- game-section -->
     <section id="works" class="game-section pt-3">
 
-        <div class="owl-carousel custom-carousel owl-theme">
+        <div class="owl-carousel custom-carousel owl-theme gallery">
             <div class="item active" style="background-image: url(images/ad/1730.jpg);">
                 <div class="item-desc">
                     <h3></h3>
@@ -691,7 +691,8 @@
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="./js/jquery3.7.js"></script>
+    <script src="./js/all.js"></script>
     <script src="https://s1.pearlcdn.com/TW/contents/js/lib/owl.carousel.min.js"></script>
     <!-- loader -->
     <script>
@@ -699,7 +700,6 @@
             document.body.classList.add('loaded');
         });
     </script>
-
     <script>
         $(function() {
             $("#header").load("layouts/header.html");
@@ -716,37 +716,7 @@
             });
         });
     </script>
-    <!-- <script>
-        $('#container').imagesLoaded(function() {
-            // images have loaded
-        });
 
-        // options
-        $('#container').imagesLoaded({
-                // options...
-            },
-            function() {
-                // images have loaded
-            }
-        );
-
-        $('#container').imagesLoaded()
-            .always(function(instance) {
-                console.log('all images loaded');
-            })
-            .done(function(instance) {
-                console.log('all images successfully loaded');
-            })
-            .fail(function() {
-                console.log('all images loaded, at least one is broken');
-            })
-            .progress(function(instance, image) {
-                var result = image.isLoaded ? 'loaded' : 'broken';
-                console.log('image is ' + result + ' for ' + image.img.src);
-            });
-    </script> -->
-    <!-- loader -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.min.js"></script>
     <script>
         const vue = new Vue({
@@ -816,6 +786,37 @@
             }
         })
     </script>
+    <!-- <script>
+        $('#container').imagesLoaded(function() {
+            // images have loaded
+        });
+
+        // options
+        $('#container').imagesLoaded({
+                // options...
+            },
+            function() {
+                // images have loaded
+            }
+        );
+
+        $('#container').imagesLoaded()
+            .always(function(instance) {
+                console.log('all images loaded');
+            })
+            .done(function(instance) {
+                console.log('all images successfully loaded');
+            })
+            .fail(function() {
+                console.log('all images loaded, at least one is broken');
+            })
+            .progress(function(instance, image) {
+                var result = image.isLoaded ? 'loaded' : 'broken';
+                console.log('image is ' + result + ' for ' + image.img.src);
+            });
+    </script> -->
+    <!-- loader -->
+
 </body>
 
 </html>
