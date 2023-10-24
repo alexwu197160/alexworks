@@ -88,6 +88,10 @@ h1,
     line-height: 1.2;
 }
 
+.my-h5 {
+    margin-bottom: 3.5rem;
+}
+
 h1,
 .h1 {
     font-size: calc(1.375rem + 1.5vw);
@@ -233,6 +237,15 @@ sup {
 a {
     color: yellow;
     text-decoration: underline;
+}
+
+.my-a {
+    olor: white !important;
+    text-decoration: none !important;
+}
+
+.my-a:hover {
+    color: red !important;
 }
 
 a:hover {
