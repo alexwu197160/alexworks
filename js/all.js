@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('.iconMoving').hide();
     $(window).on("scroll", function() {
-        $('.iconMoving').delay(1000).fadeIn(4000);
+        $('.iconMoving').delay(1000).fadeIn(2000);
     });
     $('.resumeList').hide();
     $(window).on("scroll", function() {
