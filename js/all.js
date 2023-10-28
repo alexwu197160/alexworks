@@ -18,7 +18,7 @@
         });
         $('.gallery').hide();
         $(window).on("scroll", function() {
-            $('.gallery').delay(5000).slideDown(3000);
+            $('.gallery').delay(5000).slideDown(2000);
         });
     });
     $(document).ready(function() {
