@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/work-app.css">
     <link rel="stylesheet" href="./sass/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
     <div class="container mytitle">
         <div class="row wrap">
             <div class="col-12 body">
-                <div class="row mx-auto">
+                <div class="row mx-auto slide-h3 animate__animated">
                     <h3 Class="border-start border-5 border-danger px-3">APP UI Desgin</h3>
                     <p>諳數位用戶的互動行為，積極探索使用者期望並結合商業目標，賦予產品更高度的使用價值。</p>
                 </div>
@@ -138,7 +139,7 @@
                     this.body.css('overflow', 'hidden');
                 },
                 startLoading() {
-                    this.loading = setInterval(this.load, 20);
+                    this.loading = setInterval(this.load, 5);
                 },
                 load() {
                     this.loaded < 100 ? this.loaded++ : this.doneLoading();
@@ -159,13 +160,13 @@
                             'margin-top': `-${height}`
                         },
                         options = {
-                            duration: 1000,
+                            duration: 500,
                             easing: 'swing',
                             complete() {
                                 app.removePreloader()
                             }
                         };
-                    this.preloader.delay(500).animate(properties, options)
+                    this.preloader.delay(5).animate(properties, options)
                 },
                 removePreloader() {
                     this.preloader.remove();

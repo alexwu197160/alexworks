@@ -238,8 +238,8 @@
 }
 
 .navbar-dark .navbar-toggler {
-  color: rgba(255, 255, 255, 0);
-  border-color: rgba(255, 255, 255, 0);
+  color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
 }
 
 .list .text {
@@ -464,6 +464,11 @@ p {
 
 .iconMoving {
   opacity: 1;
+}
+
+.anmate-h3 {
+  right: -1000px;
+  overflow: auto;
 }
 
 * {

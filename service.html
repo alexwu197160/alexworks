@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./sass/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Hello, Alex Works!</title>
 </head>
 
@@ -29,14 +30,14 @@
     </nav>
     <div class="container mytitle">
         <div class="row wrap">
-            <div class="col-12">
-                <div class="row mx-auto">
+            <div class="col-12 animate-h3">
+                <div class="row mx-auto animate__animated">
                     <h3 Class="border-start border-5 border-danger px-3">服務</h3>
                     <p>快速、專業、客製化的設計服務提升品牌專業形象。</p>
                 </div>
 
                 <div class="rows">
-                    <ul class="col-12 list">
+                    <ul class="col-12 list animate__animated">
                         <a href="#" class="controller controller1 pb-1">
                             <h4>UIUX 網站建制</h4>
                         </a>
@@ -252,7 +253,7 @@
                     this.body.css('overflow', 'hidden');
                 },
                 startLoading() {
-                    this.loading = setInterval(this.load, 20);
+                    this.loading = setInterval(this.load, 5);
                 },
                 load() {
                     this.loaded < 100 ? this.loaded++ : this.doneLoading();
@@ -273,13 +274,13 @@
                             'margin-top': `-${height}`
                         },
                         options = {
-                            duration: 1000,
+                            duration: 500,
                             easing: 'swing',
                             complete() {
                                 app.removePreloader()
                             }
                         };
-                    this.preloader.delay(500).animate(properties, options)
+                    this.preloader.delay(5).animate(properties, options)
                 },
                 removePreloader() {
                     this.preloader.remove();

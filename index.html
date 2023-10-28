@@ -14,6 +14,7 @@
     <meta property="og:image" content="https://alexwu197160.github.io/alexworks/images/facebook_img.jpg" />
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./sass/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link type="text/css" rel="stylesheet" href="https://s1.pearlcdn.com/TW/contents/css/lib/owl.carousel.min.css">
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
     <title>Hello, Alex Works!!!!</title>
@@ -300,7 +301,7 @@
             </div>
             <!-- tools start -->
             <div class="col-12 col-md-9">
-                <div class="col-12 py-0">
+                <div class="col-12 py-0 animate-h3 animate__animated">
                     <h3 Class="border-start border-5 border-danger px-3">關於我</h3>
                     <p>這是一個前端開發及設計、畫面、切版、動畫特效的作品集，使用 Template 建立視覺化的方式，可以在這看到前端架構中的細節以及使用了許多工具技能之應用！針對前端這個領域...讓我在設計工作上有了不同的體悟，結合過去的經驗重新整理一下對於視覺設計認知與想法。
                     </p>
@@ -435,7 +436,7 @@
     <!-- Resume start -->
     <div id="experience" class="container">
         <div class="row">
-            <div class="col-12 col-md-12">
+            <div class="col-12 col-md-12 animate__animated">
                 <h3 Class="border-start border-5 border-danger px-3 my-5">工作經歷</h3>
             </div>
 
@@ -541,7 +542,7 @@
     <!-- ADworks start -->
     <div class="container">
         <div class="row">
-            <div class="col-12 pt-5">
+            <div class="col-12 pt-5 animate__animated">
                 <h3 Class="border-start border-5 border-danger px-3">作品素材專題</h3>
             </div>
         </div>
@@ -711,7 +712,7 @@
     </section>
     <!-- ADworks end -->
 
-    <div id="planning" class="container-fluid bg-danger">
+    <div id="planning" class="container-fluid bg-danger animate__animated">
         <div class="row g-0 p-3 mx-auto myIntroduction justify-content-center align-items-center">
             <div class="col-12 col-md-2"></div>
             <div class="col-12 col-md-4">
@@ -808,7 +809,7 @@
                     this.body.css('overflow', 'hidden');
                 },
                 startLoading() {
-                    this.loading = setInterval(this.load, 20);
+                    this.loading = setInterval(this.load, 5);
                 },
                 load() {
                     this.loaded < 100 ? this.loaded++ : this.doneLoading();
@@ -829,13 +830,13 @@
                             'margin-top': `-${height}`
                         },
                         options = {
-                            duration: 1000,
+                            duration: 500,
                             easing: 'swing',
                             complete() {
                                 app.removePreloader()
                             }
                         };
-                    this.preloader.delay(500).animate(properties, options)
+                    this.preloader.delay(5).animate(properties, options)
                 },
                 removePreloader() {
                     this.preloader.remove();
