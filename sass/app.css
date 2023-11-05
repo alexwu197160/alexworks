@@ -471,6 +471,11 @@ p {
   overflow: auto;
 }
 
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
 * {
   margin: 0px;
   padding: 0px;
