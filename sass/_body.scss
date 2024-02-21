@@ -57,3 +57,25 @@
      min-height: 400px;
      background: transparent;
  }
+ 
+ //  scrollbar setting
+ /* width */
+ 
+ ::-webkit-scrollbar {
+     width: 10px;
+ }
+ /* Track */
+ 
+ ::-webkit-scrollbar-track {
+     background: #f1f1f1;
+ }
+ /* Handle */
+ 
+ ::-webkit-scrollbar-thumb {
+     background: red;
+ }
+ /* Handle on hover */
+ 
+ ::-webkit-scrollbar-thumb:hover {
+     background: rgb(178, 2, 2);
+ }
