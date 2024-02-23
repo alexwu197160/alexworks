@@ -10,7 +10,7 @@
   color: #fff;
   font-family: "Raleway", sans-serif;
   position: relative;
-  z-index: 9999;
+  z-index: 998;
 }
 
 .status {
@@ -302,7 +302,7 @@ ul {
   background: #f00;
   color: #fff;
   line-height: 50px;
-  z-index: 999;
+  z-index: 990;
 }
 
 * .btn_top > a {
@@ -972,4 +972,61 @@ footer a:hover {
 .waterfall-item:hover {
   transition: border-color 0.1s ease-in-out;
   border: 5px solid #f00;
+}
+
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.animation div.logo {
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#first {
+  stroke-dasharray: 2324px;
+  stroke-dashoffset: 2324px;
+  animation: fadeInside 1.5s ease-in forwards;
+}
+
+#second {
+  stroke-dasharray: 189px;
+  stroke-dashoffset: 189px;
+  animation: fadeInside 1.5s ease-in forwards 1.5s;
+}
+
+svg {
+  animation: fill 0.5s ease-in forwards 1.5s;
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}
+@media screen and (max-width: 880px) {
+  div.logo {
+    width: 50vw;
+    height: 20vh;
+  }
+  svg #second {
+    width: 50vw;
+  }
 }/*# sourceMappingURL=app.css.map */
