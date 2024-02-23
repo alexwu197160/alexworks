@@ -10,6 +10,7 @@ div.animation {
     align-items: center;
     div.logo {
         width: 70vw;
+        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -49,11 +50,14 @@ svg {
 }
 
 @media screen and (max-width: 880px) {
-    div.logo {
-        width: 50vw;
-        height: 20vh;
-    }
-    svg #second {
-        width: 50vw;
+    div.animation {
+        div.logo {
+            width: 50vw;
+            height: 10vh;
+        }
+        svg #second {
+            width: 50vw;
+            margin-top: 10px;
+        }
     }
 }
