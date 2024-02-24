@@ -822,6 +822,10 @@ ul {
   padding: 0 15px;
 }
 
+.myfooter-wrapper {
+  padding: 50px 0;
+}
+
 .grid-3 {
   width: 25%;
   float: left;
@@ -833,10 +837,6 @@ ul {
 
 footer {
   background-color: rgb(68, 12, 12);
-}
-
-.myfooter-wrapper {
-  padding: 50px 0;
 }
 
 .myfooter-text {
@@ -940,8 +940,11 @@ footer a:hover {
     color: #fff;
     border-bottom: 1px solid #b54343;
   }
-  .myfooter-wrapper {
+  div.myfooter-wrapper {
     padding: 50px 0 0 0;
+  }
+  div.myfooter-wrapper div.grid-3.myfooter-logo a img {
+    opacity: 0.2;
   }
 }
 @media (max-width: 640px) {
@@ -986,12 +989,15 @@ div.animation {
   align-items: center;
 }
 div.animation div.logo {
-  width: 70vw;
-  height: 40vh;
+  width: 30vw;
+  height: 30vh;
+  flex-direction: column;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+}
+div.animation div.logo svg {
+  animation: fill 0.5s ease-in forwards 1.5s;
 }
 
 #first {
@@ -1004,10 +1010,6 @@ div.animation div.logo {
   stroke-dasharray: 189px;
   stroke-dashoffset: 189px;
   animation: fadeInside 1.5s ease-in forwards 1.5s;
-}
-
-svg {
-  animation: fill 0.5s ease-in forwards 1.5s;
 }
 
 @keyframes fadeInside {
@@ -1026,10 +1028,10 @@ svg {
 @media screen and (max-width: 880px) {
   div.animation div.logo {
     width: 50vw;
-    height: 10vh;
-  }
-  div.animation svg #second {
-    width: 50vw;
-    margin-top: 10px;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }/*# sourceMappingURL=app.css.map */
